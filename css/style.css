@@ -123,11 +123,10 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 3.75rem 0 3.5rem;
+  padding: 0 0 3.5rem;
   width: 100%;
   min-height: 100%;
   background-color: #f2f2f2;
-  overflow: hidden;
 }
 .global-wrapper,
 .popup-wrapper {
@@ -297,37 +296,23 @@ body.active-overflow {
 
 /*header*/
 /*header-block*/
+
 .header-block {
-  position: fixed;
-  top: 0;
-  left: 15.25rem;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0.75rem 2rem;
   background-color: #f2f2f2;
-  z-index: 90;
+  left: 15.25rem;
   -webkit-transition: left 0.4s, right 0.4s;
   -o-transition: left 0.4s, right 0.4s;
   transition: left 0.4s, right 0.4s;
+}
+.header-block > * {
+  padding: 0.75rem 2rem;
 }
 .sidebar-active .header-block {
   left: 5.25rem;
 }
 .header-title {
-  max-width: 12.5rem;
-}
-.header-title h1 {
   font-weight: 500;
   font-size: 1.5rem;
-  line-height: 2rem;
   letter-spacing: -0.002em;
   color: #000;
 }
@@ -814,7 +799,6 @@ body.active-overflow {
   fill: #fff;
 }
 .sidebar_link_text {
-  min-width: 9.125rem;
   opacity: 1;
   -webkit-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
@@ -906,7 +890,7 @@ body.active-overflow {
   color: #2e5bff;
 }
 @media screen and (max-width: 1199px) {
-  .header-block {
+  .header-block > * {
     padding: 12px 20px;
   }
 }

@@ -1,0 +1,15 @@
+.sidebar-hidden {
+  padding-left: 0 !important;
+}
+
+.sidebar-hidden header {
+  left: 0;
+}
+
+.sidebar-hidden aside {
+  display: none;
+}
+
+header .sidebar_link_text {
+  opacity: 1;
+}
