@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <!-- <meta name="keywords" content=""> -->
+  <!-- <meta name="description" content=""> -->
+  <title>Sign in</title>
+  <!-- <link rel="icon" href="img/logo.png" type="image/x-icon"> -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="global-wrapper">
+    <header></header>
+
+    <main>
+      <section class="section-sign-in">
+        <div class="sign-in">
+          <h1>Sign in to CRM</h1>
+          
+          <p>Please enter your username and password</p>
+
+          <form>
+            <div class="sign-in_item">
+              <label for="sign-in_name">Username</label>
+              <input id="sign-in_name" type="text" name="name" required>
+            </div>
+
+            <div class="sign-in_item">
+              <a href="#" class="sign-in_item_forgot">Forgot password?</a>
+              <label for="sign-in_password">Password</label>
+              <input id="sign-in_password" type="password" name="password" required>
+            </div>
+
+            <input class="sign-in_submit" type="submit" name="submit" value="Sign in">
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </div>
+  <!-- global-wrapper end -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>
