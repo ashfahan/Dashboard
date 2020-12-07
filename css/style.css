@@ -161,9 +161,6 @@ body {
 
 /*popup*/
 /*popup-wrapper*/
-body.active-overflow {
-  overflow: hidden;
-}
 .popup-wrapper {
   display: none;
   position: fixed;
@@ -589,8 +586,8 @@ body.active-overflow {
   overflow: hidden;
 }
 .menu_name {
-  padding: 0 0.9375rem;
-  max-width: 11.25rem;
+  white-space: nowrap;
+  margin-right: 0.9375rem;
   -webkit-transition: color 0.4s;
   -o-transition: color 0.4s;
   transition: color 0.4s;
@@ -758,7 +755,6 @@ body.active-overflow {
 }
 .sidebar_item {
   position: relative;
-  overflow: hidden;
 }
 .sidebar_link {
   position: relative;

@@ -78,13 +78,11 @@ jQuery(document).ready(function ($) {
   $(function () {
     $(".menu_button").on("click", function (event) {
       event.preventDefault();
-      $(".menu").toggleClass("menu-active");
+      event.target.closest(".menu").classList.toggle("menu-active");
     });
     $(document).mouseup(function (e) {
-      var block = $(".menu");
-      if (!block.is(e.target) && block.has(e.target).length === 0) {
-        block.removeClass("menu-active");
-      }
+      var block = e.target.closest(".menu");
+      if (!block.is(e.target) && block.has(e.target).length === 0) block.removeClass("menu-active");
     });
   });
 
@@ -126,14 +124,14 @@ jQuery(document).ready(function ($) {
   $(".button-event").click(function (event) {
     event.preventDefault();
     $(".popup-event").animate(300, function () {
-      $("body").addClass("active-overflow");
+      $("body").addClass("overflow-hidden");
       $(this).addClass("popup-active").animate({ opacity: 1 }, 300);
     });
   });
 
   $(".popup-close").click(function () {
     $(".popup-wrapper").animate({ opacity: 0 }, 300, function () {
-      $("body").removeClass("active-overflow");
+      $("body").removeClass("overflow-hidden");
       $(this).removeClass("popup-active");
     });
   });
@@ -141,7 +139,7 @@ jQuery(document).ready(function ($) {
   $(".popup-wrapper, .popup-container")
     .click(function () {
       $(".popup-wrapper").animate({ opacity: 0 }, 300, function () {
-        $("body").removeClass("active-overflow");
+        $("body").removeClass("overflow-hidden");
         $(this).removeClass("popup-active");
       });
     })
