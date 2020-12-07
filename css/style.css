@@ -559,14 +559,14 @@ body {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/*menu*/
-.menu {
+/*dropdown*/
+.dropdown {
   position: relative;
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.5rem;
 }
-.menu_button {
+.dropdown_button {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,43 +576,44 @@ body {
   align-items: center;
   letter-spacing: -0.002em;
 }
-.menu_img {
+.dropdown_img {
   min-width: 2rem;
   width: 2rem;
+  margin-right: 0.9375rem;
   height: 2rem;
   border-radius: 0.5rem;
   -webkit-box-shadow: 0.625rem 0.4375rem 2.5rem rgba(0, 0, 0, 0.12);
   box-shadow: 0.625rem 0.4375rem 2.5rem rgba(0, 0, 0, 0.12);
   overflow: hidden;
 }
-.menu_name {
+.dropdown_name {
   white-space: nowrap;
   margin-right: 0.9375rem;
   -webkit-transition: color 0.4s;
   -o-transition: color 0.4s;
   transition: color 0.4s;
 }
-.menu_arrow {
+.dropdown_arrow {
   width: 0.5rem;
   height: 0.3125rem;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
 }
-.menu_arrow svg {
+.dropdown_arrow svg {
   fill: #000;
 }
-.menu_button:focus .menu_name,
-.menu_button:hover .menu_name {
+.dropdown_button:focus .dropdown_name,
+.dropdown_button:hover .dropdown_name {
   color: #2e5bff;
 }
-.menu-active .menu_arrow {
+.dropdown-active .dropdown_arrow {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/*menu_list*/
-.menu_list {
+/*dropdown_list*/
+.dropdown_list {
   position: absolute;
   top: 2.75rem;
   left: 0;
@@ -626,10 +627,10 @@ body {
   box-shadow: 0.625rem 0.4375rem 1.875rem rgba(0, 0, 0, 0.05);
   z-index: 1;
 }
-.menu-active .menu_list {
+.dropdown-active .dropdown_list {
   display: block;
 }
-.menu_list a {
+.dropdown_list a {
   display: block;
   padding: 0.5rem 0.625rem;
   border-radius: 0.125rem;
@@ -638,8 +639,8 @@ body {
   -o-transition: color 0.4s, background-color 0.4s;
   transition: color 0.4s, background-color 0.4s;
 }
-.menu_list a:focus,
-.menu_list a:hover {
+.dropdown_list a:focus,
+.dropdown_list a:hover {
   color: #000;
   background-color: rgba(46, 91, 255, 0.05);
 }

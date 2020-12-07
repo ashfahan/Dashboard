@@ -74,15 +74,15 @@ jQuery(document).ready(function ($) {
     });
   });
 
-  // menu_button
+  // dropdown_button
   $(function () {
-    $(".menu_button").on("click", function (event) {
+    $(".dropdown_button").on("click", function (event) {
       event.preventDefault();
-      event.target.closest(".menu").classList.toggle("menu-active");
+      event.target.closest(".dropdown").classList.toggle("dropdown-active");
     });
     $(document).mouseup(function (e) {
-      var block = e.target.closest(".menu");
-      if (!block.is(e.target) && block.has(e.target).length === 0) block.removeClass("menu-active");
+      var block = e.target.closest(".dropdown");
+      if (!block.is(e.target) && block.has(e.target).length === 0) block.removeClass("dropdown-active");
     });
   });
 
