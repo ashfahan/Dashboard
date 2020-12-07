@@ -67,16 +67,16 @@ jQuery(document).ready(function ($) {
       $("body").removeClass("rtl");
     });
   });
-  // header-user_button
+  // menu_button
   $(function () {
-    $(".header-user_button").on("click", function (event) {
+    $(".menu_button").on("click", function (event) {
       event.preventDefault();
-      $(".header-user").toggleClass("header-user-active");
+      $(".menu").toggleClass("menu-active");
     });
     $(document).mouseup(function (e) {
-      var block = $(".header-user");
+      var block = $(".menu");
       if (!block.is(e.target) && block.has(e.target).length === 0) {
-        block.removeClass("header-user-active");
+        block.removeClass("menu-active");
       }
     });
   });

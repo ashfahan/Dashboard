@@ -562,14 +562,14 @@ body.active-overflow {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/*header-user*/
-.header-user {
+/*menu*/
+.menu {
   position: relative;
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.5rem;
 }
-.header-user_button {
+.menu_button {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -579,7 +579,7 @@ body.active-overflow {
   align-items: center;
   letter-spacing: -0.002em;
 }
-.header-user_img {
+.menu_img {
   min-width: 2rem;
   width: 2rem;
   height: 2rem;
@@ -588,34 +588,34 @@ body.active-overflow {
   box-shadow: 0.625rem 0.4375rem 2.5rem rgba(0, 0, 0, 0.12);
   overflow: hidden;
 }
-.header-user_name {
+.menu_name {
   padding: 0 0.9375rem;
   max-width: 11.25rem;
   -webkit-transition: color 0.4s;
   -o-transition: color 0.4s;
   transition: color 0.4s;
 }
-.header-user_arrow {
+.menu_arrow {
   width: 0.5rem;
   height: 0.3125rem;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
 }
-.header-user_arrow svg {
+.menu_arrow svg {
   fill: #000;
 }
-.header-user_button:focus .header-user_name,
-.header-user_button:hover .header-user_name {
+.menu_button:focus .menu_name,
+.menu_button:hover .menu_name {
   color: #2e5bff;
 }
-.header-user-active .header-user_arrow {
+.menu-active .menu_arrow {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/*header-user_list*/
-.header-user_list {
+/*menu_list*/
+.menu_list {
   position: absolute;
   top: 2.75rem;
   left: 0;
@@ -629,10 +629,10 @@ body.active-overflow {
   box-shadow: 0.625rem 0.4375rem 1.875rem rgba(0, 0, 0, 0.05);
   z-index: 1;
 }
-.header-user-active .header-user_list {
+.menu-active .menu_list {
   display: block;
 }
-.header-user_list a {
+.menu_list a {
   display: block;
   padding: 0.5rem 0.625rem;
   border-radius: 0.125rem;
@@ -641,8 +641,8 @@ body.active-overflow {
   -o-transition: color 0.4s, background-color 0.4s;
   transition: color 0.4s, background-color 0.4s;
 }
-.header-user_list a:focus,
-.header-user_list a:hover {
+.menu_list a:focus,
+.menu_list a:hover {
   color: #000;
   background-color: rgba(46, 91, 255, 0.05);
 }
