@@ -1,5 +1,6 @@
 jQuery(document).ready(function ($) {
   // header
+
   // sidebar_button-menu
   $(function () {
     $(".sidebar_button-menu").on("click", function (event) {
@@ -8,6 +9,7 @@ jQuery(document).ready(function ($) {
       $(".sidebar_item").removeClass("sidebar_sub-list-active");
     });
   });
+
   // resize
   function resizeHeader() {
     if ($(window).width() <= 992) {
@@ -24,12 +26,14 @@ jQuery(document).ready(function ($) {
   $(window).resize(function () {
     resizeHeader();
   });
+
   // sidebar_link
   $(".sidebar_list-dropout .sidebar_link").on("click", function (event) {
     event.preventDefault();
     $(".sidebar_list-dropout .sidebar_link").not(this).parents(".sidebar_item").removeClass("sidebar_sub-list-active");
     $(this).parents(".sidebar_item").toggleClass("sidebar_sub-list-active");
   });
+
   // header-alert_button
   $(function () {
     $(".header-alert_button").on("click", function (event) {
@@ -43,6 +47,7 @@ jQuery(document).ready(function ($) {
       }
     });
   });
+
   // header-language_button
   $(function () {
     $(".header-language_button").on("click", function (event) {
@@ -56,6 +61,7 @@ jQuery(document).ready(function ($) {
       }
     });
   });
+
   // header-language
   $(function () {
     $(".language-rtl").on("click", function (event) {
@@ -67,6 +73,7 @@ jQuery(document).ready(function ($) {
       $("body").removeClass("rtl");
     });
   });
+
   // menu_button
   $(function () {
     $(".menu_button").on("click", function (event) {
@@ -80,9 +87,11 @@ jQuery(document).ready(function ($) {
       }
     });
   });
+
   // header end
 
   // tab button
+
   // button
   $(document).mouseup(function (e) {
     var div = $(".button-wrap");
@@ -99,6 +108,7 @@ jQuery(document).ready(function ($) {
     $(".choice_button").html($(this).html());
     $(this).parents(".button-wrap").removeClass("button-active");
   });
+
   // tab
   $(".tab-button").click(function () {
     var index = $(this).index();
@@ -109,6 +119,7 @@ jQuery(document).ready(function ($) {
     $(".tab-content").removeClass("tab-active");
     $(".tab-content").eq(index).addClass("tab-active");
   });
+
   // tab button end
 
   // popup
@@ -138,6 +149,7 @@ jQuery(document).ready(function ($) {
     .click(function (e) {
       e.stopPropagation();
     });
+
   // popup end
 
   // table_links
@@ -153,6 +165,7 @@ jQuery(document).ready(function ($) {
     $(".table_links_button").not(this).parents(".table_links").removeClass("table_links-active");
     $(this).parents(".table_links").toggleClass("table_links-active");
   });
+
   // table_links end
 });
 //jQuery
