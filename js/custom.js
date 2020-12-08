@@ -74,16 +74,11 @@ jQuery(document).ready(function ($) {
     });
   });
 
-  // dropdown_button
-  $(function () {
-    $(".dropdown_button").on("click", function (event) {
-      event.preventDefault();
-      event.target.closest(".dropdown").classList.toggle("dropdown-active");
-    });
-    $(document).mouseup(function (e) {
-      var block = e.target.closest(".dropdown");
-      if (!block.is(e.target) && block.has(e.target).length === 0) block.removeClass("dropdown-active");
-    });
+  var dropdowntriggers = document.getElementsByClassName("dropdown-trigger");
+  Object.keys(dropdowntriggers).forEach(function (k) {
+    dropdowntriggers[k].onclick = function (e) {
+      e.target.closest(".dropdown-trigger").classList.toggle("active");
+    };
   });
 
   // header end

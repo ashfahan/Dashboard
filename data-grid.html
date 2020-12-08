@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/fluid-utilities.css" />
+    <link rel="stylesheet" href="css/Fluid/temp/fluid.css" />
     <link rel="stylesheet" href="css/changes.css" />
   </head>
   <body>
@@ -148,19 +148,13 @@
             </div>
 
             <div class="dropdown">
-              <a href="" class="dropdown_button">
+              <button class="dropdown-trigger sidebar_link btn shadow-none">
                 <div class="dropdown_img" style="background-image: url(img/header-user_img.png)"></div>
 
-                <div class="dropdown_name">Marcus Mango</div>
+                Marcus Mango
+              </button>
 
-                <div class="dropdown_arrow">
-                  <svg viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.895104 1.29501C0.824112 1.2246 0.78418 1.12875 0.78418 1.02876C0.78418 0.928769 0.824112 0.832921 0.895104 0.762508L1.0451 0.612508C1.11566 0.539264 1.21341 0.498534 1.3151 0.500008H6.68511C6.78679 0.498534 6.88455 0.539264 6.95511 0.612508L7.10511 0.762508C7.1761 0.832921 7.21603 0.928769 7.21603 1.02876C7.21603 1.12875 7.1761 1.2246 7.10511 1.29501L4.2626 4.13751C4.19456 4.21002 4.09954 4.25115 4.0001 4.25115C3.90067 4.25115 3.80565 4.21002 3.7376 4.13751L0.895104 1.29501Z" fill="black" />
-                  </svg>
-                </div>
-              </a>
-
-              <ul class="dropdown_list">
+              <ul class="menu">
                 <li><a href="#">Edit Profile</a></li>
                 <li><a href="#">Log out</a></li>
               </ul>
@@ -169,10 +163,10 @@
         </div>
 
         <div class="flex justify-center align-middle">
-          <ul class="sidebar_list flex flex-wrap px-0">
+          <ul class="sidebar_list flex align-middle flex-wrap px-0">
             <li class="sidebar_item">
               <a href="index.html" class="sidebar_link">
-                <div class="sidebar_link_img">
+                <div class="sidebar_link_img icon is-lg">
                   <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16667 6.66667V3.33333C9.16667 2.8731 8.79357 2.5 8.33333 2.5H3.33333C2.8731 2.5 2.5 2.8731 2.5 3.33333V6.66667C2.5 7.1269 2.8731 7.5 3.33333 7.5H8.33333C8.79357 7.5 9.16667 7.1269 9.16667 6.66667ZM3.33333 9.16667H8.33333C8.79357 9.16667 9.16667 9.53976 9.16667 10V16.6667C9.16667 17.1269 8.79357 17.5 8.33333 17.5H3.33333C2.8731 17.5 2.5 17.1269 2.5 16.6667V10C2.5 9.53976 2.8731 9.16667 3.33333 9.16667ZM16.6667 12.5H11.6667C11.2064 12.5 10.8333 12.8731 10.8333 13.3333V16.6667C10.8333 17.1269 11.2064 17.5 11.6667 17.5H16.6667C17.1269 17.5 17.5 17.1269 17.5 16.6667V13.3333C17.5 12.8731 17.1269 12.5 16.6667 12.5ZM11.6667 2.5H16.6667C17.1269 2.5 17.5 2.8731 17.5 3.33333V10C17.5 10.4602 17.1269 10.8333 16.6667 10.8333H11.6667C11.2064 10.8333 10.8333 10.4602 10.8333 10V3.33333C10.8333 2.8731 11.2064 2.5 11.6667 2.5Z"></path>
                   </svg>
@@ -183,7 +177,7 @@
             </li>
             <li class="sidebar_item">
               <a href="data-view.html" class="sidebar_link">
-                <div class="sidebar_link_img">
+                <div class="sidebar_link_img icon is-lg">
                   <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00002 0.666748C4.39765 0.666748 0.666687 4.39771 0.666687 9.00008C0.666687 13.6025 4.39765 17.3334 9.00002 17.3334C13.6024 17.3334 17.3334 13.6025 17.3334 9.00008C17.3334 6.78994 16.4554 4.67033 14.8926 3.10752C13.3298 1.54472 11.2102 0.666748 9.00002 0.666748ZM9.00002 3.16675C10.3807 3.16675 11.5 4.28604 11.5 5.66675C11.5 7.04746 10.3807 8.16675 9.00002 8.16675C7.61931 8.16675 6.50002 7.04746 6.50002 5.66675C6.50002 4.28604 7.61931 3.16675 9.00002 3.16675ZM9.00002 14.8224C10.8459 14.8224 12.5829 13.9487 13.6834 12.4667C13.8539 12.2175 13.8762 11.8955 13.7417 11.6251L13.55 11.2334C13.1307 10.3776 12.2613 9.83468 11.3084 9.83342H6.69169C5.72512 9.83445 4.84576 10.3926 4.43336 11.2667L4.25836 11.6334C4.12711 11.9016 4.14937 12.2195 4.31669 12.4667C5.41716 13.9487 7.15413 14.8224 9.00002 14.8224Z"></path>
                   </svg>
@@ -194,7 +188,7 @@
             </li>
             <li class="sidebar_item">
               <a href="data-grid.html" class="sidebar_link">
-                <div class="sidebar_link_img">
+                <div class="sidebar_link_img icon is-lg">
                   <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill-rule="evenodd"
@@ -209,7 +203,7 @@
             </li>
             <li class="sidebar_item">
               <a href="#" class="sidebar_link">
-                <div class="sidebar_link_img">
+                <div class="sidebar_link_img icon is-lg">
                   <svg viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill-rule="evenodd"
@@ -224,7 +218,7 @@
             </li>
             <li class="sidebar_item">
               <a href="#" class="sidebar_link">
-                <div class="sidebar_link_img">
+                <div class="sidebar_link_img icon is-lg">
                   <svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill-rule="evenodd"
@@ -237,26 +231,20 @@
                 <div class="sidebar_link_text">Individual Events</div>
               </a>
             </li>
-            <li class="sidebar_item border-left border-wide"></li>
+            <li class="sidebar_item border-left border-wide align-self-stretch"></li>
             <li class="sidebar_item">
               <div class="dropdown">
-                <a href="" class="dropdown_button sidebar_link">
-                  <div class="sidebar_link_img">
+                <button class="dropdown-trigger sidebar_link btn shadow-none">
+                  <div class="sidebar_link_img icon is-lg">
                     <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3333 11.0715L15.8889 14.6313C16.0477 14.8079 16.0398 15.0783 15.8711 15.2454L15.2489 15.8684C15.1654 15.9526 15.0518 16 14.9333 16C14.8148 16 14.7012 15.9526 14.6178 15.8684L11.0622 12.3085C10.9639 12.21 10.8746 12.1028 10.7956 11.9881L10.1289 11.0982C9.02582 11.9801 7.65604 12.4602 6.24444 12.4598C3.33565 12.4699 0.808019 10.461 0.15798 7.62231C-0.492058 4.78365 0.908981 1.87288 3.53164 0.613257C6.1543 -0.646363 9.29864 0.0813446 11.1031 2.36555C12.9076 4.64977 12.8906 7.88086 11.0622 10.1459L11.9511 10.76C12.0899 10.849 12.2182 10.9535 12.3333 11.0715ZM1.80003 6.23013C1.80003 8.68769 3.78988 10.6799 6.24448 10.6799C7.42322 10.6799 8.55368 10.2111 9.38718 9.37662C10.2207 8.54212 10.6889 7.41029 10.6889 6.23013C10.6889 3.77258 8.69908 1.78033 6.24448 1.78033C3.78988 1.78033 1.80003 3.77258 1.80003 6.23013Z" />
                     </svg>
                   </div>
 
-                  <div class="dropdown_name">Look Up</div>
+                  Look Up
+                </button>
 
-                  <div class="dropdown_arrow">
-                    <svg viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.895104 1.29501C0.824112 1.2246 0.78418 1.12875 0.78418 1.02876C0.78418 0.928769 0.824112 0.832921 0.895104 0.762508L1.0451 0.612508C1.11566 0.539264 1.21341 0.498534 1.3151 0.500008H6.68511C6.78679 0.498534 6.88455 0.539264 6.95511 0.612508L7.10511 0.762508C7.1761 0.832921 7.21603 0.928769 7.21603 1.02876C7.21603 1.12875 7.1761 1.2246 7.10511 1.29501L4.2626 4.13751C4.19456 4.21002 4.09954 4.25115 4.0001 4.25115C3.90067 4.25115 3.80565 4.21002 3.7376 4.13751L0.895104 1.29501Z" fill="black" />
-                    </svg>
-                  </div>
-                </a>
-
-                <ul class="dropdown_list">
+                <ul class="menu">
                   <li><a href="system-log.html">Lorem ipsum</a></li>
                   <li><a href="system-log.html">Lorem ipsum</a></li>
                   <li><a href="system-log.html">Lorem ipsum</a></li>
@@ -266,8 +254,8 @@
             </li>
             <li class="sidebar_item">
               <div class="dropdown">
-                <a href="" class="dropdown_button sidebar_link">
-                  <div class="sidebar_link_img">
+                <button class="dropdown-trigger sidebar_link btn shadow-none">
+                  <div class="sidebar_link_img icon is-lg">
                     <svg viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         fill-rule="evenodd"
@@ -277,16 +265,10 @@
                     </svg>
                   </div>
 
-                  <div class="dropdown_name">Administration</div>
+                  Administration
+                </button>
 
-                  <div class="dropdown_arrow">
-                    <svg viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.895104 1.29501C0.824112 1.2246 0.78418 1.12875 0.78418 1.02876C0.78418 0.928769 0.824112 0.832921 0.895104 0.762508L1.0451 0.612508C1.11566 0.539264 1.21341 0.498534 1.3151 0.500008H6.68511C6.78679 0.498534 6.88455 0.539264 6.95511 0.612508L7.10511 0.762508C7.1761 0.832921 7.21603 0.928769 7.21603 1.02876C7.21603 1.12875 7.1761 1.2246 7.10511 1.29501L4.2626 4.13751C4.19456 4.21002 4.09954 4.25115 4.0001 4.25115C3.90067 4.25115 3.80565 4.21002 3.7376 4.13751L0.895104 1.29501Z" fill="black" />
-                    </svg>
-                  </div>
-                </a>
-
-                <ul class="dropdown_list">
+                <ul class="menu">
                   <li><a href="system-log.html">System Logs</a></li>
                   <li><a href="system-log.html">Lorem ipsum</a></li>
                   <li><a href="system-log.html">Lorem ipsum</a></li>
@@ -315,7 +297,7 @@
               <ul class="sidebar_list">
                 <li class="sidebar_item">
                   <a href="index.html" class="sidebar_link">
-                    <div class="sidebar_link_img">
+                    <div class="sidebar_link_img icon is-lg">
                       <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16667 6.66667V3.33333C9.16667 2.8731 8.79357 2.5 8.33333 2.5H3.33333C2.8731 2.5 2.5 2.8731 2.5 3.33333V6.66667C2.5 7.1269 2.8731 7.5 3.33333 7.5H8.33333C8.79357 7.5 9.16667 7.1269 9.16667 6.66667ZM3.33333 9.16667H8.33333C8.79357 9.16667 9.16667 9.53976 9.16667 10V16.6667C9.16667 17.1269 8.79357 17.5 8.33333 17.5H3.33333C2.8731 17.5 2.5 17.1269 2.5 16.6667V10C2.5 9.53976 2.8731 9.16667 3.33333 9.16667ZM16.6667 12.5H11.6667C11.2064 12.5 10.8333 12.8731 10.8333 13.3333V16.6667C10.8333 17.1269 11.2064 17.5 11.6667 17.5H16.6667C17.1269 17.5 17.5 17.1269 17.5 16.6667V13.3333C17.5 12.8731 17.1269 12.5 16.6667 12.5ZM11.6667 2.5H16.6667C17.1269 2.5 17.5 2.8731 17.5 3.33333V10C17.5 10.4602 17.1269 10.8333 16.6667 10.8333H11.6667C11.2064 10.8333 10.8333 10.4602 10.8333 10V3.33333C10.8333 2.8731 11.2064 2.5 11.6667 2.5Z" />
                       </svg>
@@ -327,7 +309,7 @@
 
                 <li class="sidebar_item">
                   <a href="data-view.html" class="sidebar_link">
-                    <div class="sidebar_link_img">
+                    <div class="sidebar_link_img icon is-lg">
                       <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00002 0.666748C4.39765 0.666748 0.666687 4.39771 0.666687 9.00008C0.666687 13.6025 4.39765 17.3334 9.00002 17.3334C13.6024 17.3334 17.3334 13.6025 17.3334 9.00008C17.3334 6.78994 16.4554 4.67033 14.8926 3.10752C13.3298 1.54472 11.2102 0.666748 9.00002 0.666748ZM9.00002 3.16675C10.3807 3.16675 11.5 4.28604 11.5 5.66675C11.5 7.04746 10.3807 8.16675 9.00002 8.16675C7.61931 8.16675 6.50002 7.04746 6.50002 5.66675C6.50002 4.28604 7.61931 3.16675 9.00002 3.16675ZM9.00002 14.8224C10.8459 14.8224 12.5829 13.9487 13.6834 12.4667C13.8539 12.2175 13.8762 11.8955 13.7417 11.6251L13.55 11.2334C13.1307 10.3776 12.2613 9.83468 11.3084 9.83342H6.69169C5.72512 9.83445 4.84576 10.3926 4.43336 11.2667L4.25836 11.6334C4.12711 11.9016 4.14937 12.2195 4.31669 12.4667C5.41716 13.9487 7.15413 14.8224 9.00002 14.8224Z" />
                       </svg>
@@ -339,7 +321,7 @@
 
                 <li class="sidebar_item">
                   <a href="data-grid.html" class="sidebar_link">
-                    <div class="sidebar_link_img">
+                    <div class="sidebar_link_img icon is-lg">
                       <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           fill-rule="evenodd"
@@ -355,7 +337,7 @@
 
                 <li class="sidebar_item">
                   <a href="#" class="sidebar_link">
-                    <div class="sidebar_link_img">
+                    <div class="sidebar_link_img icon is-lg">
                       <svg viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           fill-rule="evenodd"
@@ -371,7 +353,7 @@
 
                 <li class="sidebar_item">
                   <a href="#" class="sidebar_link">
-                    <div class="sidebar_link_img">
+                    <div class="sidebar_link_img icon is-lg">
                       <svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           fill-rule="evenodd"
@@ -389,7 +371,7 @@
               <ul class="sidebar_list sidebar_list-dropout">
                 <li class="sidebar_item">
                   <a href="#" class="sidebar_link">
-                    <div class="sidebar_link_img">
+                    <div class="sidebar_link_img icon is-lg">
                       <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3333 11.0715L15.8889 14.6313C16.0477 14.8079 16.0398 15.0783 15.8711 15.2454L15.2489 15.8684C15.1654 15.9526 15.0518 16 14.9333 16C14.8148 16 14.7012 15.9526 14.6178 15.8684L11.0622 12.3085C10.9639 12.21 10.8746 12.1028 10.7956 11.9881L10.1289 11.0982C9.02582 11.9801 7.65604 12.4602 6.24444 12.4598C3.33565 12.4699 0.808019 10.461 0.15798 7.62231C-0.492058 4.78365 0.908981 1.87288 3.53164 0.613257C6.1543 -0.646363 9.29864 0.0813446 11.1031 2.36555C12.9076 4.64977 12.8906 7.88086 11.0622 10.1459L11.9511 10.76C12.0899 10.849 12.2182 10.9535 12.3333 11.0715ZM1.80003 6.23013C1.80003 8.68769 3.78988 10.6799 6.24448 10.6799C7.42322 10.6799 8.55368 10.2111 9.38718 9.37662C10.2207 8.54212 10.6889 7.41029 10.6889 6.23013C10.6889 3.77258 8.69908 1.78033 6.24448 1.78033C3.78988 1.78033 1.80003 3.77258 1.80003 6.23013Z" />
                       </svg>
@@ -414,7 +396,7 @@
 
                 <li class="sidebar_item">
                   <a href="#" class="sidebar_link">
-                    <div class="sidebar_link_img">
+                    <div class="sidebar_link_img icon is-lg">
                       <svg viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           fill-rule="evenodd"
@@ -502,6 +484,10 @@
                   <td>
                     <div class="details-table_name">Total Pending Individuals</div>
                     <div class="details-table_value">12</div>
+                  </td>
+
+                  <td>
+                    <button class="btn is-sld is-primary">Move to DC</button>
                   </td>
                 </tr>
               </table>
