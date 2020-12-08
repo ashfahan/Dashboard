@@ -9,7 +9,7 @@
     selector: "",
     values: static relative absolute fixed sticky,
     disable-prefix-values-keys: true,
-    enable-important-values: true
+    enable-important-values: true,
   );
 
   @include generate-style($config);
@@ -26,12 +26,13 @@
       25: 25%,
       50: 50%,
       75: 75%,
-      100: 100%
+      100: 100%,
+      auto: auto,
     ),
     infixes: top bottom right left,
     disable-prefix-infixes-keys: true,
     disable-prefix-infixes-values: true,
-    enable-important-values: true
+    enable-important-values: true,
   );
 
   @include generate-style($config);

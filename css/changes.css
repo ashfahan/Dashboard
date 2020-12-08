@@ -6,7 +6,7 @@
   left: 0;
 }
 
-.sidebar-hidden aside {
+.sidebar-hidden .header-sidebar-block {
   display: none;
 }
 
