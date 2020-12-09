@@ -52,7 +52,6 @@
     bottom: 0;
     right: -100%;
     z-index: $sidebar-zindex;
-    overflow: auto;
     width: 100%;
     @include transition($sidebar-transition);
 

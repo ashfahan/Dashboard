@@ -91,6 +91,10 @@ jQuery(document).ready(function ($) {
     document.querySelector(".lyt-sidebar").classList.add("active");
   };
 
+  document.querySelector(".lyt-sidebar-toggle").onclick = function () {
+    document.querySelector(".lyt-sidebar").classList.toggle("active");
+  };
+
   // header end
 
   // tab button
