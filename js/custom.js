@@ -74,6 +74,7 @@ jQuery(document).ready(function ($) {
     });
   });
 
+  // Dropdown
   var dropdowntriggers = document.getElementsByClassName("dropdown-trigger");
   Object.keys(dropdowntriggers).forEach(function (k) {
     dropdowntriggers[k].onclick = function (e) {
