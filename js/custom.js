@@ -82,6 +82,15 @@ jQuery(document).ready(function ($) {
     };
   });
 
+  // Sidebar
+  document.querySelector(".lyt-sidebar + .overlay").onclick = function () {
+    document.querySelector(".lyt-sidebar").classList.remove("active");
+  };
+
+  document.querySelector(".lyt-sidebar-open").onclick = function () {
+    document.querySelector(".lyt-sidebar").classList.add("active");
+  };
+
   // header end
 
   // tab button
