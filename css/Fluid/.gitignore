@@ -21,7 +21,6 @@ nbproject
 /data
 
 # Log and Temp extensions
-/temp
 .cache
 *.diff
 *.err
