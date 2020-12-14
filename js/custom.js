@@ -83,17 +83,23 @@ jQuery(document).ready(function ($) {
   });
 
   // Sidebar
-  document.querySelector(".lyt-sidebar + .overlay").onclick = function () {
-    document.querySelector(".lyt-sidebar").classList.remove("active");
-  };
+  if (document.querySelector(".lyt-sidebar + .overlay")) {
+    document.querySelector(".lyt-sidebar + .overlay").onclick = function () {
+      document.querySelector(".lyt-sidebar").classList.remove("active");
+    };
+  }
 
-  document.querySelector(".lyt-sidebar-open").onclick = function () {
-    document.querySelector(".lyt-sidebar").classList.add("active");
-  };
+  if (document.querySelector(".lyt-sidebar-open")) {
+    document.querySelector(".lyt-sidebar-open").onclick = function () {
+      document.querySelector(".lyt-sidebar").classList.add("active");
+    };
+  }
 
-  document.querySelector(".lyt-sidebar-toggle").onclick = function () {
-    document.querySelector(".lyt-sidebar").classList.toggle("active");
-  };
+  if (document.querySelector(".lyt-sidebar-toggle")) {
+    document.querySelector(".lyt-sidebar-toggle").onclick = function () {
+      document.querySelector(".lyt-sidebar").classList.toggle("active");
+    };
+  }
 
   // header end
 
