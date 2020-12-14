@@ -1,0 +1,33 @@
+// left sidebar
+.sidebar-hidden {
+  padding-left: 0 !important;
+
+  header {
+    left: 0;
+  }
+
+  .header-sidebar-block {
+    display: none;
+  }
+}
+
+header .sidebar_link_text {
+  opacity: 1;
+}
+
+// right sidebar
+.lyt-sidebar {
+  > .lyt-sidebar-toggle {
+    left: -100vw;
+    margin-left: 100%;
+    transform: translate(-50%, -50%);
+    transition: margin-left 0.5s ease-in-out, left 0.5s ease-in-out,
+      transform 0.5s ease-in-out;
+  }
+
+  &.active > .lyt-sidebar-toggle {
+    left: 0;
+    margin-left: 0;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
