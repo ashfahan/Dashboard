@@ -431,66 +431,121 @@
       <main>
         <section class="section-custom">
           <div class="photos-container data-grid-table-container">
-            <div class="table-detail">
-              <table>
-                <tr>
-                  <td>
-                    <div class="table-detail_name">ID</div>
-                    <div class="table-detail_value">19193NASD</div>
-                  </td>
+            <div class="grid px-1rem">
+              <div class="column w-16 border-right">
+                <div class="txt-center detail">
+                  <label class="control flex flex-wrap align-middle">
+                    <span class="label pr-1rem">Claim No</span>
+                    <input type="text" class="input w-auto flex-grow" placeholder="Enter the number" />
+                  </label>
+                </div>
 
-                  <td>
-                    <div class="table-detail_name">Family ID</div>
-                    <div class="table-detail_value">19184HH</div>
-                  </td>
+                <div class="grid">
+                  <div class="column w-4 detail">
+                    <div class="name">Claim Date</div>
+                    <div class="value">05/02/2020</div>
+                  </div>
 
-                  <td>
-                    <div class="table-detail_name">First Name</div>
-                    <div class="table-detail_value">Lorem ipsum sit</div>
-                  </td>
+                  <div class="column w-4 detail">
+                    <div class="name">Batch No</div>
+                    <div class="value">6546584987</div>
+                  </div>
 
-                  <td>
-                    <div class="table-detail_name">Last Name</div>
-                    <div class="table-detail_value">Lorem ipsum</div>
-                  </td>
+                  <div class="column w-4 detail">
+                    <div class="name">First Name</div>
+                    <div class="value">Lorem ipsum sit</div>
+                  </div>
 
-                  <td>
-                    <div class="table-detail_name">City</div>
-                    <div class="table-detail_value">Dubai</div>
-                  </td>
+                  <div class="column w-4 detail">
+                    <div class="name">Daily Target</div>
+                    <div class="value">654</div>
+                  </div>
 
-                  <td>
-                    <div class="table-detail_name">Created Date</div>
-                    <div class="table-detail_value">05/02/2020</div>
-                  </td>
-                </tr>
+                  <div class="column w-4 detail">
+                    <div class="name">Assurance Name</div>
+                    <div class="value">Lorem ipsum sit</div>
+                  </div>
 
-                <tr>
-                  <td>
-                    <div class="table-detail_name">Last Entry Date</div>
-                    <div class="table-detail_value">10/05/2020</div>
-                  </td>
+                  <div class="column w-4 detail">
+                    <div class="name">Insurance Id</div>
+                    <div class="value">848456</div>
+                  </div>
 
-                  <td>
-                    <div class="table-detail_name">Last Data Retrieve Date</div>
-                    <div class="table-detail_value">12/05/2020</div>
-                  </td>
+                  <div class="column w-4 detail">
+                    <div class="name">Birth Date</div>
+                    <div class="value">10/05/2020</div>
+                  </div>
 
-                  <td>
-                    <div class="table-detail_name">Last Data Retrieve Date</div>
-                    <div class="table-detail_value">12/05/2020</div>
-                  </td>
+                  <div class="column w-4 detail">
+                    <div class="name">Policy Name</div>
+                    <div class="value">Lorem ipsum sit</div>
+                  </div>
 
-                  <td>
-                    <div class="table-detail_name">Total Pending Individuals</div>
-                    <div class="table-detail_value">12</div>
-                  </td>
+                  <div class="column w-4 detail">
+                    <div class="name">Valid From</div>
+                    <div class="value">12/05/2020</div>
+                  </div>
 
-                  <td>
-                    <button class="btn is-sld is-primary lyt-sidebar-open">Open Drawer</button>
-                  </td>
-                </tr>
-              </table>
+                  <div class="column w-4 detail">
+                    <div class="name">Valid To</div>
+                    <div class="value">12/05/2020</div>
+                  </div>
+
+                  <div class="column w-4 detail">
+                    <div class="name">Entered by</div>
+                    <div class="value">Lorem ipsum sit</div>
+                  </div>
+
+                  <div class="column w-4 detail">
+                    <div class="name">Out Patient</div>
+                    <div class="value">Yes</div>
+                  </div>
+                </div>
+              </div>
+              <div class="column w-8 border-left flex is-y justify-between">
+                <div class="grid">
+                  <div class="column w-12 detail txt-center">
+                    <div class="name h5">Process</div>
+                    <div class="value font-bold">
+                      <span class="h1 clr-valid">75</span>
+                      <span class="h2">/</span>
+                      <span class="h5">100</span>
+                    </div>
+                  </div>
+
+                  <div class="column w-12 detail txt-center">
+                    <div class="name h5">Error</div>
+                    <div class="value h1 font-bold clr-error">76</div>
+                  </div>
+                </div>
+
+                <div class="txt-center">
+                  <button class="btn is-sld is-primary inline-flex align-middle">
+                    <div class="icon clr-light mr-7px">
+                      <svg viewBox="0 0 12 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 0.5C0.67125 0.5 0 1.17125 0 2V3.5C0 3.914 0.336 4.25 0.75 4.25H11.25C11.664 4.25 12 3.914 12 3.5V2C12 1.17125 11.3287 0.5 10.5 0.5H1.5ZM0.75 5.75C0.336 5.75 0 6.086 0 6.5V9.5C0 9.914 0.336 10.25 0.75 10.25H11.25C11.664 10.25 12 9.914 12 9.5V6.5C12 6.086 11.664 5.75 11.25 5.75H0.75ZM0.75 11.75C0.336 11.75 0 12.086 0 12.5V14C0 14.8288 0.67125 15.5 1.5 15.5H10.5C11.3287 15.5 12 14.8288 12 14V12.5C12 12.086 11.664 11.75 11.25 11.75H0.75Z" />
+                      </svg>
+                    </div>
+                    View History
+                  </button>
+                  <button class="btn is-sld is-primary inline-flex align-middle">
+                    <div class="icon clr-light mr-7px">
+                      <svg viewBox="0 0 12 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 0.5C0.67125 0.5 0 1.17125 0 2V3.5C0 3.914 0.336 4.25 0.75 4.25H11.25C11.664 4.25 12 3.914 12 3.5V2C12 1.17125 11.3287 0.5 10.5 0.5H1.5ZM0.75 5.75C0.336 5.75 0 6.086 0 6.5V9.5C0 9.914 0.336 10.25 0.75 10.25H11.25C11.664 10.25 12 9.914 12 9.5V6.5C12 6.086 11.664 5.75 11.25 5.75H0.75ZM0.75 11.75C0.336 11.75 0 12.086 0 12.5V14C0 14.8288 0.67125 15.5 1.5 15.5H10.5C11.3287 15.5 12 14.8288 12 14V12.5C12 12.086 11.664 11.75 11.25 11.75H0.75Z" />
+                      </svg>
+                    </div>
+                    View Admission
+                  </button>
+                  <button class="btn is-sld is-primary inline-flex align-middle">
+                    <div class="icon clr-light mr-7px">
+                      <svg viewBox="0 0 12 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 0.5C0.67125 0.5 0 1.17125 0 2V3.5C0 3.914 0.336 4.25 0.75 4.25H11.25C11.664 4.25 12 3.914 12 3.5V2C12 1.17125 11.3287 0.5 10.5 0.5H1.5ZM0.75 5.75C0.336 5.75 0 6.086 0 6.5V9.5C0 9.914 0.336 10.25 0.75 10.25H11.25C11.664 10.25 12 9.914 12 9.5V6.5C12 6.086 11.664 5.75 11.25 5.75H0.75ZM0.75 11.75C0.336 11.75 0 12.086 0 12.5V14C0 14.8288 0.67125 15.5 1.5 15.5H10.5C11.3287 15.5 12 14.8288 12 14V12.5C12 12.086 11.664 11.75 11.25 11.75H0.75Z" />
+                      </svg>
+                    </div>
+                    Reject All
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </section>

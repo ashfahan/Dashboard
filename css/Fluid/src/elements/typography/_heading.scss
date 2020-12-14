@@ -2,38 +2,56 @@
 // Heading Element
 //
 
-h1,
-.h1 {
+h1 {
   @extend %heading;
   @include fontsize($h1-fontsize);
 }
 
-h2,
-.h2 {
+h2 {
   @extend %heading;
   @include fontsize($h2-fontsize);
 }
 
-h3,
-.h3 {
+h3 {
   @extend %heading;
   @include fontsize($h3-fontsize);
 }
 
-h4,
-.h4 {
+h4 {
   @extend %heading;
   @include fontsize($h4-fontsize);
 }
 
-h5,
-.h5 {
+h5 {
   @extend %heading;
   @include fontsize($h5-fontsize);
 }
 
-h6,
-.h6 {
+h6 {
   @extend %heading;
   @include fontsize($h6-fontsize);
+}
+
+.h1 {
+  @include fontsize($h1-fontsize, true);
+}
+
+.h2 {
+  @include fontsize($h2-fontsize, true);
+}
+
+.h3 {
+  @include fontsize($h3-fontsize, true);
+}
+
+.h4 {
+  @include fontsize($h4-fontsize, true);
+}
+
+.h5 {
+  @include fontsize($h5-fontsize, true);
+}
+
+.h6 {
+  @include fontsize($h6-fontsize, true);
 }

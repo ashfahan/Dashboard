@@ -16,4 +16,20 @@ header .sidebar_link_text { opacity: 1; }
 
 .lyt-sidebar.active > .lyt-sidebar-toggle { left: 0; margin-left: 0; transform: translate(-50%, -50%) rotate(180deg); }
 
+/*
+  Details
+*/
+.detail { padding: 0.75rem; }
+
+.detail .name { margin-bottom: 0.75rem; font-size: 0.75rem; font-weight: 500; color: #697a8f; }
+
+.detail .value { font-size: 0.875rem; }
+
+.details-hr { position: relative; margin-bottom: 2rem; padding-bottom: 2rem; }
+
+.details-hr:after { position: absolute; content: ""; left: 2rem; right: 2rem; bottom: 0; height: 1px; background-color: rgba(191, 197, 210, 0.3); }
+
+@media (max-width: 1200px) { .details-hr .details-hr { margin-bottom: 24px; padding-bottom: 24px; }
+  .details-hr .details-hr:after { left: 24px; right: 24px; } }
+
 /*# sourceMappingURL=custom.css.map */

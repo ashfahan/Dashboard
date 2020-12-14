@@ -27,7 +27,7 @@ hr, fieldset { border: 0; }
 
 ::-moz-focus-inner { border-style: none; }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, ol, ul, dl, p, pre { margin-top: 0; }
+h1, h2, h3, h4, h5, h6, ol, ul, dl, p, pre { margin-top: 0; }
 
 body, input, button, select, optgroup, textarea, fieldset { margin: 0; }
 
@@ -39,7 +39,7 @@ select:not([disabled]):not(:disabled), button:not([disabled]):not(:disabled), [t
 
 @media (prefers-reduced-motion: reduce) { .control > .radio ~ .label::before, .control > .checkbox ~ .label::before, .control > .switch ~ .label::before, .input, .btn, .range, .menu-item, .addon, .lyt-header, .lyt-sidebar.fixed, .overlay, .control.has-floating-label > .input[placeholder=" "] ~ .label, .btn.is-min::before, .btn.is-unstyle, .range::-webkit-slider-thumb, .range::-moz-range-thumb, .range::-ms-thumb, .range::-moz-range-track, .range::-webkit-slider-runnable-track, .range::-ms-track, .control > .switch ~ .label::after, .menu-item::before, .menu-item.hover:not(.active)::before, .menu-item:not(.active):hover::before, .menu-item.focus:not(.active)::before, .menu-item:not(.active):focus::before, .menu-trigger::after { transition: none; } }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { margin-bottom: 0.5em; font-weight: 700; line-height: 1.2; }
+h1, h2, h3, h4, h5, h6 { margin-bottom: 0.5em; font-weight: 700; line-height: 1.2; }
 
 .control > .radio ~ .label::before, .control > .checkbox ~ .label::before, .control > .switch ~ .label::before, .input, .btn, .range, .menu-item, .addon { position: relative; display: inline-block; user-select: none; padding: 0.375em 0.75em; border: 1px solid transparent; border-radius: 0.25em; background-color: transparent; vertical-align: middle; text-decoration: none; font-weight: 400; line-height: 1.5; font-size: 1rem; transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border 0.15s ease-in-out,box-shadow 0.15s ease-in-out; }
 
@@ -237,17 +237,29 @@ kbd kbd { font-size: 100%; font-weight: 700; }
 
 b, strong { font-weight: bolder; }
 
-h1, .h1 { font-size: 2.5rem; }
+h1 { font-size: 2.5rem; }
 
-h2, .h2 { font-size: 2rem; }
+h2 { font-size: 2rem; }
 
-h3, .h3 { font-size: 1.75rem; }
+h3 { font-size: 1.75rem; }
 
-h4, .h4 { font-size: 1.5rem; }
+h4 { font-size: 1.5rem; }
 
-h5, .h5 { font-size: 1.25rem; }
+h5 { font-size: 1.25rem; }
 
-h6, .h6 { font-size: 1rem; }
+h6 { font-size: 1rem; }
+
+.h1 { font-size: 2.5rem!important; }
+
+.h2 { font-size: 2rem!important; }
+
+.h3 { font-size: 1.75rem!important; }
+
+.h4 { font-size: 1.5rem!important; }
+
+.h5 { font-size: 1.25rem!important; }
+
+.h6 { font-size: 1rem!important; }
 
 p { margin-bottom: 0.5em; }
 
