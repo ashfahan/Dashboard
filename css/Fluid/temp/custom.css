@@ -8,6 +8,8 @@
 
 .sidebar-hidden header { left: 0; }
 
+.sidebar-hidden footer { left: 0; }
+
 .sidebar-hidden .header-sidebar-block { display: none; }
 
 header .sidebar_link_text { opacity: 1; }
