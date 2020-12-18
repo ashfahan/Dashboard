@@ -99,7 +99,7 @@ header .sidebar_link_text { opacity: 1; }
 
 .arrow-up::before { content: ""; position: absolute; top: -10px; right: 50%; transform: translate(50%); border: 10px solid transparent; border-bottom-color: #2b2b2b; border-top: 0; }
 
-.tooltip-inside .tooltip { display: none; }
+.tooltip-inside .tooltip { display: none; width: 30rem; text-align: center; color: #474747; z-index: 100; }
 
 .tooltip-inside.hover .tooltip, .tooltip-inside:hover .tooltip { display: block; }
 

@@ -50,6 +50,10 @@
 .tooltip-inside {
   .tooltip {
     display: none;
+    width: 30rem;
+    text-align: center;
+    color: $body-color;
+    z-index: 100;
   }
   @include hover {
     .tooltip {
