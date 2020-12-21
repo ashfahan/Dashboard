@@ -1,9 +1,9 @@
 .badge {
-  display: inline-flex;
-  margin: 3px;
-  align-items: center;
-  justify-content: center;
-  padding: 7px;
+  display: inline;
+  margin: 0.1em;
+  // align-items: center;
+  // justify-content: center;
+  padding: 0.5em;
   background-color: $light;
   border-radius: $borderradius-normal;
   white-space: nowrap;
