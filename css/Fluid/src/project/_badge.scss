@@ -1,8 +1,8 @@
 .badge {
-  display: inline;
+  display: inline-flex;
   margin: 0.1em;
-  // align-items: center;
-  // justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 0.5em;
   background-color: $light;
   border-radius: $borderradius-normal;
