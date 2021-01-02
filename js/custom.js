@@ -3,7 +3,8 @@ var popoverList = popoverTriggerList.map((popoverTriggerEl) => {
   return new bootstrap.Popover(popoverTriggerEl, {
     html: true,
     container: "body",
-    sanitize: false
+    sanitize: false,
+    trigger: "focus"
   });
 });
 
