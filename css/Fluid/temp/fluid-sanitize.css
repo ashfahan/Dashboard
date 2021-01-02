@@ -140,6 +140,8 @@ svg:not(:root) { overflow: hidden; }
 
 caption { caption-side: bottom; padding-top: 0.8em; padding-bottom: 0.8em; color: #9c9c9c; text-align: left; }
 
+.table { vertical-align: middle; }
+
 label { margin-bottom: 0.5em; }
 
 legend { margin-bottom: .5rem; font-size: 1.25rem; }
