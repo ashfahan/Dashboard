@@ -1,17 +1,17 @@
 .badge {
   display: inline-flex;
-  margin: 0.1em;
   align-items: center;
   justify-content: center;
-  padding: 0.5em;
-  background-color: $light;
+  padding: .5em;
+  margin: .1em;
   border-radius: $borderradius-normal;
+  background-color: $light;
   white-space: nowrap;
 
   @each $color, $value in $theme-colors {
     &.is-#{$color} {
-      background-color: clr-step($value, -8);
       color: clr-step($value, 1);
+      background-color: clr-step($value, -8);
     }
   }
 }

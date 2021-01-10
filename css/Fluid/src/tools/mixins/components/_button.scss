@@ -73,7 +73,7 @@
   color: if(clr-auto($color) != clr-auto($button-theme), clr-auto($color), null);
   @include gradient-background($color, 180deg)
 
-  @include hover {
+    @include hover {
     color: $color;
     box-shadow: box-shadow($button-focus-boxshadow rgba($color, .5));
   }
@@ -87,14 +87,13 @@
   }
 }
 
-
 @mixin button-design-fillin-variant($color) {
   $active-border: clr-step($color, 4);
 
   @include hover-focus {
+    border-color: $color;
     color: clr-auto($color);
     @include gradient-background($color, 180deg);
-    border-color: $color;
   }
 
   @include hover {
@@ -102,12 +101,11 @@
   }
 
   @include active {
+    border-color: $active-border;
     color: clr-auto($color);
     @include gradient-background($active-border, 180deg);
-    border-color: $active-border;
   }
 }
-
 
 // minimal design variant
 @mixin button-design-minimal-variant($color) {

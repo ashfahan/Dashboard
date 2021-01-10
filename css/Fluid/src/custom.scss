@@ -1,9 +1,4 @@
-/**
- * Fluid Utilities v0.20.2
- * Copyright (c) 2019-2027 Fluid Framework
- * Copyright (c) 2019-2027 Ashfahan
- * Licensed under MIT (https://github.com/fluid-framework/Fluid/blob/master/LICENSE)
-*/
+// stylelint-disable selector-class-pattern
 
 // Configuration
 
@@ -45,4 +40,8 @@
     transform: translate(50%);
     @include triangle(top, 10px, $control-feedback-background);
   }
+}
+
+header .sidebar_link_text {
+  opacity: 1;
 }
