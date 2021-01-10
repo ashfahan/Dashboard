@@ -42,6 +42,24 @@
   }
 }
 
-header .sidebar_link_text {
-  opacity: 1;
+header {
+  transition: left 0.4s ease-in-out, right 0.4s ease-in-out, top 1s ease-in-out;
+  top: 0;
+
+  .headroom--unpinned & {
+    top: -100%;
+  }
+
+  .sidebar_link_text {
+    opacity: 1;
+  }
+}
+
+footer {
+  transition: left 0.4s ease-in-out, right 0.4s ease-in-out, bottom 1s ease-in-out;
+  bottom: 0;
+
+  .headroom--unpinned & {
+    bottom: -100%;
+  }
 }

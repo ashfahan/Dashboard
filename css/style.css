@@ -163,8 +163,7 @@ body {
   opacity: 0;
   z-index: 2000;
 }
-  width: 0;
-}
+
 .popup-wrapper.popup-active {
   display: block;
 }
@@ -276,7 +275,6 @@ body {
 .header-block {
   background-color: #f2f2f2;
   left: 15.25rem;
-  transition: left 0.4s, right 0.4s;
 }
 .header-block > * {
   padding: 0.75rem 2rem;
@@ -829,7 +827,6 @@ body {
   padding: 1rem 2rem;
   background-color: #f2f2f2;
   z-index: 80;
-  transition: left 0.4s, right 0.4s;
 }
 .sidebar-active .footer {
   left: 5.25rem;
