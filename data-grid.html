@@ -599,7 +599,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr class="data">
                         <td class="txt-nowrap">19194132HJJ</td>
                         <td class="txt-nowrap">11/20/2018</td>
                         <td class="txt-nowrap">Nursing care</td>
@@ -701,42 +701,42 @@
                           </button>
                         </td>
                         <td>
-                          <button
-                            type="button"
-                            class="btn is-sld inline-flex align-middle is-secondary"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <form>
-                              <label class="block"><span class="label mb-2 inline-block">Medical Service</span>
-                                <select class="input">
-                                  <option>Please Select</option>
-                                  <option>Test 1</option>
-                                  <option>Test 2</option>
-                                  <option>Test 3</option>
-                                  <option>Test 4</option>
-                                  <option>Test 5</option>
-                                  <option>Test 6</option>
-                                  <option>Test 7</option>
-                                  <option>Test 8</option>
-                                  <option>Test 9</option>
-                                  <option>Test 10</option>
-                                  <option>Test 11</option>
-                                </select>
-                              </label>
-                              <label class="block"><span class="label mb-2 inline-block">Gross</span><input type="text" class="input"/></label>
-                              <label class="block"><span class="label mb-2 inline-block">Rejected Reason</span><textarea  rows="2" class="input"></textarea></label>
-                            </form>'
-                          >
-                            Edit <i class="ml-8 icon ri-edit-2-line"></i>
-                          </button>
+                          <button type="button" data-button="edit" class="btn is-sld inline-flex align-middle is-secondary">Edit <i class="ml-8 icon ri-edit-2-line"></i></button>
                         </td>
                       </tr>
-                      <tr>
+                      <tr class="description">
                         <td class="bg-warn" colspan="24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi, blanditiis voluptas quod pariatur eos provident exercitationem tempora odit dolor libero laudantium.</td>
                       </tr>
+                      <tr class="editform" style="display: none">
+                        <td colspan="24">
+                          <div class="grid">
+                            <div class="column grid p-0">
+                              <label class="column w-12 control">
+                                <span class="label inline-block mb-2">D.O.T</span>
+                                <input class="input col" type="date" />
+                              </label>
+                              <label class="column w-12 control">
+                                <span class="label inline-block mb-2">Medical Service</span>
+                                <input class="input col" type="text" />
+                              </label>
+                              <label class="column w-12 control">
+                                <span class="label inline-block mb-2">Gross</span>
+                                <input class="input col" min="0" type="number" />
+                              </label>
+                              <label class="column w-12 control">
+                                <span class="label inline-block mb-2">Rejected</span>
+                                <input class="input col" min="0" type="number" />
+                              </label>
+                            </div>
+                            <label class="column w-8 control flex is-y">
+                              <span class="label inline-block mb-2">Rejected Reason</span>
+                              <textarea rows="4" class="input col"></textarea>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
 
-                      <tr>
+                      <tr class="data">
                         <td class="txt-nowrap">19194132HJJ</td>
                         <td class="txt-nowrap">11/20/2018</td>
                         <td class="txt-nowrap">Nursing care</td>
@@ -838,42 +838,42 @@
                           </button>
                         </td>
                         <td>
-                          <button
-                            type="button"
-                            class="btn is-sld inline-flex align-middle is-secondary"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <form>
-                              <label class="block"><span class="label mb-2 inline-block">Medical Service</span>
-                                <select class="input">
-                                  <option>Please Select</option>
-                                  <option>Test 1</option>
-                                  <option>Test 2</option>
-                                  <option>Test 3</option>
-                                  <option>Test 4</option>
-                                  <option>Test 5</option>
-                                  <option>Test 6</option>
-                                  <option>Test 7</option>
-                                  <option>Test 8</option>
-                                  <option>Test 9</option>
-                                  <option>Test 10</option>
-                                  <option>Test 11</option>
-                                </select>
-                              </label>
-                              <label class="block"><span class="label mb-2 inline-block">Gross</span><input type="text" class="input"/></label>
-                              <label class="block"><span class="label mb-2 inline-block">Rejected Reason</span><textarea  rows="2" class="input"></textarea></label>
-                            </form>'
-                          >
-                            Edit <i class="ml-8 icon ri-edit-2-line"></i>
-                          </button>
+                          <button type="button" data-button="edit" class="btn is-sld inline-flex align-middle is-secondary">Edit <i class="ml-8 icon ri-edit-2-line"></i></button>
                         </td>
                       </tr>
-                      <tr>
+                      <tr class="description">
                         <td class="bg-warn" colspan="24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi, blanditiis voluptas quod pariatur eos provident exercitationem tempora odit dolor libero laudantium.</td>
                       </tr>
+                      <tr class="editform" style="display: none">
+                        <td colspan="24">
+                          <div class="grid">
+                            <div class="column grid p-0">
+                              <label class="column w-12 control">
+                                <span class="label inline-block mb-2">D.O.T</span>
+                                <input class="input col" type="date" />
+                              </label>
+                              <label class="column w-12 control">
+                                <span class="label inline-block mb-2">Medical Service</span>
+                                <input class="input col" type="text" />
+                              </label>
+                              <label class="column w-12 control">
+                                <span class="label inline-block mb-2">Gross</span>
+                                <input class="input col" min="0" type="number" />
+                              </label>
+                              <label class="column w-12 control">
+                                <span class="label inline-block mb-2">Rejected</span>
+                                <input class="input col" min="0" type="number" />
+                              </label>
+                            </div>
+                            <label class="column w-8 control flex is-y">
+                              <span class="label inline-block mb-2">Rejected Reason</span>
+                              <textarea rows="4" class="input col"></textarea>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
 
-                      <tr>
+                      <tr class="data">
                         <td class="txt-nowrap">19194132HJJ</td>
                         <td class="txt-nowrap">
                           11/20/2018
@@ -975,39 +975,39 @@
                           </button>
                         </td>
                         <td>
-                          <button
-                            type="button"
-                            class="btn is-sld inline-flex align-middle is-secondary"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <form>
-                              <label class="block"><span class="label mb-2 inline-block">Medical Service</span>
-                                <select class="input">
-                                  <option>Please Select</option>
-                                  <option>Test 1</option>
-                                  <option>Test 2</option>
-                                  <option>Test 3</option>
-                                  <option>Test 4</option>
-                                  <option>Test 5</option>
-                                  <option>Test 6</option>
-                                  <option>Test 7</option>
-                                  <option>Test 8</option>
-                                  <option>Test 9</option>
-                                  <option>Test 10</option>
-                                  <option>Test 11</option>
-                                </select>
-                              </label>
-                              <label class="block"><span class="label mb-2 inline-block">Gross</span><input type="text" class="input"/></label>
-                              <label class="block"><span class="label mb-2 inline-block">Rejected Reason</span><textarea  rows="2" class="input"></textarea></label>
-                            </form>'
-                          >
-                            Edit <i class="ml-8 icon ri-edit-2-line"></i>
-                          </button>
+                          <button type="button" data-button="edit" class="btn is-sld inline-flex align-middle is-secondary">Edit <i class="ml-8 icon ri-edit-2-line"></i></button>
                         </td>
                       </tr>
-                      <tr>
+                      <tr class="description">
                         <td class="bg-warn" colspan="24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi, blanditiis voluptas quod pariatur eos provident exercitationem tempora odit dolor libero laudantium.</td>
+                      </tr>
+                      <tr class="editform" style="display: none">
+                        <td colspan="24">
+                          <div class="grid">
+                            <div class="column grid p-0">
+                              <label class="column w-12 control">
+                                <span class="label inline-block mb-2">D.O.T</span>
+                                <input class="input col" type="date" />
+                              </label>
+                              <label class="column w-12 control">
+                                <span class="label inline-block mb-2">Medical Service</span>
+                                <input class="input col" type="text" />
+                              </label>
+                              <label class="column w-12 control">
+                                <span class="label inline-block mb-2">Gross</span>
+                                <input class="input col" min="0" type="number" />
+                              </label>
+                              <label class="column w-12 control">
+                                <span class="label inline-block mb-2">Rejected</span>
+                                <input class="input col" min="0" type="number" />
+                              </label>
+                            </div>
+                            <label class="column w-8 control flex is-y">
+                              <span class="label inline-block mb-2">Rejected Reason</span>
+                              <textarea rows="4" class="input col"></textarea>
+                            </label>
+                          </div>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -1214,7 +1214,7 @@
     </div>
     <!-- global-wrapper end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/headroom.js/dist/headroom.js"></script>
     <script src="js/custom.js"></script>
   </body>
