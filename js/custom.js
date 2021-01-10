@@ -148,7 +148,7 @@ jQuery(document).ready(($) => {
   // edit button
 
   document.querySelectorAll('[data-button="edit"]').forEach((button) => {
-    button.onclick = (event) => {
+    button.onclick = () => {
       const form = button.closest(".data").nextElementSibling.nextElementSibling;
       $(form).toggle("fast");
     };
