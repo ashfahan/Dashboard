@@ -1,12 +1,5 @@
 .badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: .5em;
-  margin: .1em;
-  border-radius: $borderradius-normal;
-  background-color: $light;
-  white-space: nowrap;
+  background-color: $dark;
 
   @each $color, $value in $theme-colors {
     &.is-#{$color} {

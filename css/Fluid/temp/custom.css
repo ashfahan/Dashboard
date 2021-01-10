@@ -69,7 +69,7 @@
 
 .rtl .table-block th, .rtl .table-block .table_filter { padding-right: 0; padding-left: .875rem; }
 
-.badge { display: inline-flex; align-items: center; justify-content: center; padding: .5em; margin: .1em; border-radius: 0.5em; background-color: whitesmoke; white-space: nowrap; }
+.badge { background-color: #2b2b2b; }
 
 .badge.is-light { color: gainsboro; background-color: #fdfdfd; }
 
