@@ -1,11 +1,6 @@
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-var popoverList = popoverTriggerList.map((popoverTriggerEl) => {
-  return new bootstrap.Popover(popoverTriggerEl, {
-    html: true,
-    container: "body",
-    sanitize: false
-  });
-});
+var popoveritems = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+var popover = popoveritems.map((popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl, { html: true, container: "body", sanitize: false }));
+popoveritems.forEach((element) => (element.onclick = () => popover.forEach((e) => (e._element != element ? e.hide() : null))));
 
 jQuery(document).ready(($) => {
   // header
