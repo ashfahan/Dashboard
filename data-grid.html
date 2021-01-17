@@ -184,14 +184,18 @@
               </a>
             </li>
             <li class="sidebar_item">
-              <button class="sidebar_link btn is-unstyle flex" data-bs-target="#exampleModal" data-bs-toggle="modal">
+              <a class="sidebar_link" href="claim-page.html">
                 <div class="sidebar_link_img icon is-lg">
-                  <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00002 0.666748C4.39765 0.666748 0.666687 4.39771 0.666687 9.00008C0.666687 13.6025 4.39765 17.3334 9.00002 17.3334C13.6024 17.3334 17.3334 13.6025 17.3334 9.00008C17.3334 6.78994 16.4554 4.67033 14.8926 3.10752C13.3298 1.54472 11.2102 0.666748 9.00002 0.666748ZM9.00002 3.16675C10.3807 3.16675 11.5 4.28604 11.5 5.66675C11.5 7.04746 10.3807 8.16675 9.00002 8.16675C7.61931 8.16675 6.50002 7.04746 6.50002 5.66675C6.50002 4.28604 7.61931 3.16675 9.00002 3.16675ZM9.00002 14.8224C10.8459 14.8224 12.5829 13.9487 13.6834 12.4667C13.8539 12.2175 13.8762 11.8955 13.7417 11.6251L13.55 11.2334C13.1307 10.3776 12.2613 9.83468 11.3084 9.83342H6.69169C5.72512 9.83445 4.84576 10.3926 4.43336 11.2667L4.25836 11.6334C4.12711 11.9016 4.14937 12.2195 4.31669 12.4667C5.41716 13.9487 7.15413 14.8224 9.00002 14.8224Z" />
+                  <svg viewBox="0 0 14 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6666 4.16658C13.6666 3.24611 12.9205 2.49992 12 2.49992H8.66665C8.66665 1.57944 7.92045 0.833252 6.99998 0.833252C6.0795 0.833252 5.33331 1.57944 5.33331 2.49992H1.99998C1.0795 2.49992 0.333313 3.24611 0.333313 4.16658V17.4999C0.333313 18.4204 1.0795 19.1666 1.99998 19.1666H12C12.9205 19.1666 13.6666 18.4204 13.6666 17.4999V4.16658ZM1.99998 17.4999V4.16658H3.66665V5.41658C3.66665 5.6467 3.85319 5.83325 4.08331 5.83325H9.91665C10.1468 5.83325 10.3333 5.6467 10.3333 5.41658V4.16658H12V17.4999H1.99998ZM4.91665 9.16659H4.08331C3.85319 9.16659 3.66665 8.98004 3.66665 8.74992V7.91658C3.66665 7.68647 3.85319 7.49992 4.08331 7.49992H4.91665C5.14676 7.49992 5.33331 7.68647 5.33331 7.91658V8.74992C5.33331 8.98004 5.14676 9.16659 4.91665 9.16659ZM4.08331 12.4999H4.91665C5.14676 12.4999 5.33331 12.3134 5.33331 12.0833V11.2499C5.33331 11.0198 5.14676 10.8333 4.91665 10.8333H4.08331C3.85319 10.8333 3.66665 11.0198 3.66665 11.2499V12.0833C3.66665 12.3134 3.85319 12.4999 4.08331 12.4999ZM4.91665 15.8333H4.08331C3.85319 15.8333 3.66665 15.6467 3.66665 15.4166V14.5833C3.66665 14.3531 3.85319 14.1666 4.08331 14.1666H4.91665C5.14676 14.1666 5.33331 14.3531 5.33331 14.5833V15.4166C5.33331 15.6467 5.14676 15.8333 4.91665 15.8333Z"
+                    />
                   </svg>
                 </div>
-                <div class="sidebar_link_text">Dispatch claim</div>
-              </button>
+                <div class="sidebar_link_text">Claim Management</div>
+              </a>
             </li>
             <li class="sidebar_item">
               <a class="sidebar_link" href="data-grid.html">
@@ -205,7 +209,7 @@
                   </svg>
                 </div>
 
-                <div class="sidebar_link_text">Claim Management</div>
+                <div class="sidebar_link_text">Grid</div>
               </a>
             </li>
             <li class="sidebar_item">
@@ -1119,98 +1123,6 @@
           <a href="#">Terms of Use</a>
         </div>
       </footer>
-
-      <div class="modal fade" id="exampleModal" aria-hidden="true" aria-labelledby="exampleModalLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">New Batch</h5>
-              <button class="btn-close" data-bs-dismiss="modal" type="button" aria-label="Close"></button>
-            </div>
-            <div class="modal-body grid has-gap-lg align-middle">
-              <div class="column w-12">
-                <label class="custom-control custom-checkbox grid align-middle has-gap-0 mb-0">
-                  <span class="custom-control-label column w-8">Cash Claim :</span>
-                  <input class="custom-control-input" type="checkbox" />
-                </label>
-              </div>
-              <div class="column w-12">
-                <label class="control grid align-middle has-gap-0"><input class="order-1 input w-auto flex-grow" type="text" /> <span class="label column w-8">Batch No :</span> </label>
-              </div>
-              <div class="column w-12">
-                <label class="control grid align-middle has-gap-0"><input class="order-1 input w-auto flex-grow" type="date" /> <span class="label column w-8">Batch Date :</span> </label>
-              </div>
-              <div class="column w-12">
-                <label class="control grid align-middle has-gap-0"><input class="order-1 input w-auto flex-grow" type="date" /> <span class="label column w-8">Batch Orignal Date :</span> </label>
-              </div>
-              <div class="column w-12">
-                <label class="control grid align-middle has-gap-0">
-                  <select class="order-1 input w-auto flex-grow">
-                    <option>Please Select</option>
-                    <optgroup label="tesing">
-                      <option>Test 1</option>
-                      <option>Test 2</option>
-                      <option>Test 3</option>
-                      <option>Test 4</option>
-                      <option>Test 5</option>
-                    </optgroup>
-
-                    <optgroup label="tesing">
-                      <option>Test 6</option>
-                      <option>Test 7</option>
-                      <option>Test 8</option>
-                      <option>Test 9</option>
-                      <option>Test 10</option>
-                      <option>Test 11</option>
-                    </optgroup>
-                  </select>
-                  <span class="label w-8">Provider :</span>
-                </label>
-              </div>
-              <div class="column w-12">
-                <label class="control grid align-middle has-gap-0">
-                  <select class="order-1 input w-auto flex-grow">
-                    <option>Please Select</option>
-                    <optgroup label="tesing">
-                      <option>Test 1</option>
-                      <option>Test 2</option>
-                      <option>Test 3</option>
-                      <option>Test 4</option>
-                      <option>Test 5</option>
-                    </optgroup>
-
-                    <optgroup label="tesing">
-                      <option>Test 6</option>
-                      <option>Test 7</option>
-                      <option>Test 8</option>
-                      <option>Test 9</option>
-                      <option>Test 10</option>
-                      <option>Test 11</option>
-                    </optgroup>
-                  </select>
-                  <span class="label w-8">Ins Company :</span>
-                </label>
-              </div>
-              <div class="column w-12">
-                <label class="control grid align-middle has-gap-0"><input class="order-1 input w-auto flex-grow" type="text" /> <span class="label column w-8">Sum Of Claim :</span> </label>
-              </div>
-              <div class="column w-12">
-                <label class="control grid align-middle has-gap-0"><input class="order-1 input w-auto flex-grow" type="text" /> <span class="label column w-8">Cur Name :</span> </label>
-              </div>
-              <div class="column w-12">
-                <label class="control grid align-middle has-gap-0"><input class="order-1 input w-auto flex-grow" type="text" /> <span class="label column w-8">Cur :</span> </label>
-              </div>
-              <div class="column w-12">
-                <label class="control grid"><textarea class="order-1 input w-auto flex-grow" rows="3"></textarea> <span class="label column w-8">Note :</span> </label>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button class="inline-flex align-middle btn is-sld is-primary" data-bs-dismiss="modal" type="button">Create Batch</button>
-              <button class="inline-flex align-middle btn is-sld is-valid" type="button">Create & go to batch</button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- global-wrapper end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
