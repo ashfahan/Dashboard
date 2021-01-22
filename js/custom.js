@@ -101,7 +101,7 @@ jQuery(document).ready(($) => {
   Object.values(dropdowntriggers).forEach((trigger) => {
     trigger.onclick = (e) => {
       Object.values(dropdowntriggers).forEach((trigger) => {
-        if (trigger.closest(".dropdown-trigger").classList.contains("active")) trigger.closest(".dropdown-trigger").classList.remove("active");
+        if (e.target != trigger && trigger.closest(".dropdown-trigger").classList.contains("active")) trigger.closest(".dropdown-trigger").classList.remove("active");
       });
       e.target.closest(".dropdown-trigger").classList.toggle("active");
     };
