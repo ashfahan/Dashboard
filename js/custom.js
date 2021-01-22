@@ -125,29 +125,40 @@ jQuery(document).ready(($) => {
   // tab button
 
   // button
-  $(document).mouseup((e) => {
-    var div = $(".button-wrap");
-    if (!div.is(e.target) && div.has(e.target).length === 0) $(".button-wrap").removeClass("button-active");
-  });
 
-  $(".choice_button").click(() => $(this).parents(".button-wrap").toggleClass("button-active"));
+  if (document.querySelectorAll(".tabs").length) {
+    // const queryString = window.location.hash;
+    // const activeTab = e.querySelector(queryString ? `a[href='${queryString}']` : "a.tabs-switcher");
 
-  $(".tab-button").click(() => {
-    $(".choice_button").html($(this).html());
-    $(this).parents(".button-wrap").removeClass("button-active");
-  });
+    document.querySelectorAll(".tabs").forEach((tabs) => {
+      $.fx.off = true;
+      const firsttab = tabs.querySelector(".tab_content:first-child").getAttribute("data-tab");
+      changetab(firsttab, tabs);
+      $.fx.off = false;
+    });
 
-  // tab
-  $(".tab-button").click(() => {
-    var index = $(this).index();
+    function changetab(href, root) {
+      root.setAttribute("active", href);
+      root.querySelectorAll("a.tabs-switcher").forEach((e) => e.classList.remove("active")); // Hide all content
+      root.querySelector(`.tabs-switcher[href*='#${href}']`).classList.add("active");
+      root.querySelectorAll(`.tab_content`).forEach((e) => {
+        if (e.parentElement.closest(".tabs") === root) $(e).slideUp(400);
+      });
+      root.querySelectorAll(`[data-tab='${href}']`).forEach((e) => $(e).slideDown(400));
+      root.querySelectorAll(`[data-tab='${href}']`).forEach((e) => e.classList.add("active"));
+    }
 
-    $(".tab-button").removeClass("tab-active");
-    $(this).addClass("tab-active");
-
-    $(".tab-content").removeClass("tab-active");
-    $(".tab-content").eq(index).addClass("tab-active");
-  });
-
+    // On Click Event
+    document.querySelectorAll("a.tabs-switcher").forEach((e) => {
+      e.onclick = (event) => {
+        const switcher = event.target;
+        const href = switcher.getAttribute("href").replace("#", "");
+        const parent = switcher.getAttribute("data-parent");
+        const root = switcher.closest(parent ?? ".tabs");
+        changetab(href, root);
+      };
+    });
+  }
   // tab button end
 
   // edit button

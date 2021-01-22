@@ -1,0 +1,14 @@
+/*tab*/
+
+.tab-button-wrap {
+  margin: 0 2rem 2rem;
+  border-bottom: 1px solid rgba(191, 197, 210, 0.3);
+}
+
+.tabs-switcher {
+  padding: 1.375rem !important;
+
+  &.active {
+    pointer-events: none;
+  }
+}

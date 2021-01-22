@@ -1149,64 +1149,6 @@ body {
   border: 1px solid #f2f2f2;
   background-color: #fff;
 }
-/*tab*/
-.tab-button-wrap {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 2rem 2rem;
-  border-bottom: 1px solid rgba(191, 197, 210, 0.3);
-}
-.tab-button_block {
-  margin-bottom: 0;
-  display: flex;
-  align-items: center;
-}
-.tab-button {
-  position: relative;
-  display: block;
-  padding: 1.375rem;
-  font-weight: 600;
-  font-size: 0.75rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #8798ad;
-  cursor: pointer;
-  user-select: none;
-  transition: 0.4s;
-}
-.tab-button:focus,
-.tab-button:hover {
-  color: #2e5bff;
-}
-.tab-button.tab-active {
-  color: #2e5bff;
-  cursor: default;
-  pointer-events: none;
-}
-.tab-button:after {
-  position: absolute;
-  content: "";
-  left: 50%;
-  bottom: -1px;
-  width: 0%;
-  height: 2px;
-  background-color: #2e5bff;
-  transform: translateX(-50%);
-  transition: 0.4s;
-}
-.tab-button.tab-active:after {
-  width: 100%;
-}
-.tab-content {
-  display: none;
-}
-.tab-content.tab-active {
-  display: block;
-}
 /*form-block*/
 .form-block {
   padding: 0 1rem;
