@@ -98,8 +98,13 @@ jQuery(document).ready(($) => {
 
   // Dropdown
   var dropdowntriggers = document.getElementsByClassName("dropdown-trigger");
-  Object.keys(dropdowntriggers).forEach((k) => {
-    dropdowntriggers[k].onclick = (e) => e.target.closest(".dropdown-trigger").classList.toggle("active");
+  Object.values(dropdowntriggers).forEach((trigger) => {
+    trigger.onclick = (e) => {
+      Object.values(dropdowntriggers).forEach((trigger) => {
+        if (trigger.closest(".dropdown-trigger").classList.contains("active")) trigger.closest(".dropdown-trigger").classList.remove("active");
+      });
+      e.target.closest(".dropdown-trigger").classList.toggle("active");
+    };
   });
 
   // Sidebar
