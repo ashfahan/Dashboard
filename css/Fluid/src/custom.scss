@@ -65,3 +65,7 @@ footer {
     bottom: -100%;
   }
 }
+
+.input:disabled {
+  background-image: none;
+}

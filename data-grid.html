@@ -468,10 +468,22 @@
                   <div class="column w-14 grid align-middle">
                     <div class="column w-4"><img src="./img/user image.png" /></div>
                     <div class="column w-20">
-                      <div class="font-bold is-lg">Test User <i class="ri-pencil-line"></i></div>
+                      <div class="control font-bold flex align-middle flex-wrap">
+                        <select class="w-auto input o-100 is-unstyle p-0" disabled>
+                          <option value="TestUser">Test User 1</option>
+                          <option value="TestUser">Test User 2</option>
+                          <option value="TestUser">Test User 3</option>
+                          <option value="TestUser">Test User 4</option>
+                        </select>
+                        <div class="hidden ml-7px">
+                          <button onclick="editname(this)" class="btn is-sld is-primary">Save</button>
+                          <button onclick="editname(this)" class="btn is-sld is-primary">Cancel</button>
+                        </div>
+                        <i onclick="editname(this)" class="ml-7px icon ri-pencil-line"></i>
+                      </div>
                       <div class="flex align-middle">
                         <div class="mr-1rem">01/01/2001</div>
-                        <div class="mr-1rem">ID: <span>01201999233</span></div>
+                        <div class="mr-1rem">ID: <span>01201999</span></div>
                         <div class="mr-1rem">01-20-2020</div>
                       </div>
                       <div>Provider Name: <span>Al Shafa Clinic</span></div>
@@ -1124,6 +1136,28 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      function editname(e) {
+        const control = e.closest(".control");
+        control.querySelector("div").classList.toggle("hidden");
+        control.querySelector("i").classList.toggle("hidden");
+
+        const input = control.querySelector("select");
+        const editting = input.disabled;
+
+        console.log(editting);
+
+        input.classList.toggle("p-0");
+        input.classList.toggle("is-unstyle");
+        if (editting) {
+          input.removeAttribute("disabled");
+        } else {
+          input.setAttribute("disabled", true);
+        }
+      }
+    </script>
+
     <!-- global-wrapper end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
