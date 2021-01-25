@@ -1341,7 +1341,6 @@ body {
   pointer-events: none;
 }
 @media screen and (max-width: 1199px) {
-
   .form-block {
     padding: 0 12px;
   }
@@ -2223,6 +2222,9 @@ body {
   }
   .rtl .summary-button-container .summary-button {
     margin: 0 auto 24px;
+  }
+  .show {
+    display: block;
   }
 }
 /*rtl end*/
