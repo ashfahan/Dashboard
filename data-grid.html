@@ -469,12 +469,13 @@
                     <div class="column w-4"><img src="./img/user image.png" /></div>
                     <div class="column w-20">
                       <div class="control font-bold flex align-middle flex-wrap">
-                        <select class="w-auto input o-100 is-unstyle p-0" disabled>
+                        <input class="input w-auto flex-grow o-100 is-unstyle p-0" type="text" value="Test User" placeholder="Enter the claim number" disabled />
+                        <!-- <select class="w-auto input o-100 is-unstyle p-0" disabled>
                           <option value="TestUser">Test User 1</option>
                           <option value="TestUser">Test User 2</option>
                           <option value="TestUser">Test User 3</option>
                           <option value="TestUser">Test User 4</option>
-                        </select>
+                        </select> -->
                         <div class="hidden ml-7px">
                           <button onclick="editname(this)" class="btn is-sld is-primary">Save</button>
                           <button onclick="editname(this)" class="btn is-sld is-primary">Cancel</button>
@@ -1143,10 +1144,8 @@
         control.querySelector("div").classList.toggle("hidden");
         control.querySelector("i").classList.toggle("hidden");
 
-        const input = control.querySelector("select");
+        const input = control.querySelector(".input");
         const editting = input.disabled;
-
-        console.log(editting);
 
         input.classList.toggle("p-0");
         input.classList.toggle("is-unstyle");
