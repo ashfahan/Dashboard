@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="Add()">Add Row</button>
+    <div id="rows">
+      <div>
+        <input id="input_0" type="text" placeholder="Enter Value" />
+        <select id="input_1">
+          <option value>Please Select</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let index = 1;
+
+    const node = document.createElement("div");
+    node.innerHTML = `
+            <input type="text" placeholder="Enter Value" />
+            <select>
+              <option value>Please Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <button onclick="Remove(this)">X</button>`;
+
+    function Add() {
+      const clone = node.cloneNode(true);
+      clone.querySelector("input").setAttribute("id", "input_" + index);
+      clone.querySelector("select").setAttribute("id", "select_" + index);
+      document.querySelector("#rows").appendChild(clone);
+      index++;
+    }
+
+    function Remove(element) {
+      const node = element.closest("div");
+      node.remove();
+    }
+  </script>
+</html>
