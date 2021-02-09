@@ -108,16 +108,24 @@ jQuery(document).ready(($) => {
   });
 
   // Sidebar
-  if (document.querySelector(".lyt-sidebar + .overlay")) {
-    document.querySelector(".lyt-sidebar + .overlay").onclick = () => document.querySelector(".lyt-sidebar").classList.remove("active");
+  if ((lytsidebaroverlay = document.querySelectorAll(".lyt-sidebar + .overlay"))) {
+    lytsidebaroverlay.forEach((overlay) => {
+      overlay.onclick = (e) => {
+        const sidebar = e.target.previousSibling.previousSibling;
+        sidebar.classList.remove("z-top");
+        sidebar.classList.remove("active");
+      };
+    });
   }
 
-  if (document.querySelector(".lyt-sidebar-open")) {
-    document.querySelector(".lyt-sidebar-open").onclick = () => document.querySelector(".lyt-sidebar").classList.add("active");
-  }
-
-  if (document.querySelector(".lyt-sidebar-toggle")) {
-    document.querySelector(".lyt-sidebar-toggle").onclick = () => document.querySelector(".lyt-sidebar").classList.toggle("active");
+  if ((lytsidebartoggle = document.querySelectorAll(".lyt-sidebar-toggle"))) {
+    lytsidebartoggle.forEach((toggle) => {
+      toggle.onclick = (e) => {
+        const sidebar = e.target.closest(".lyt-sidebar");
+        sidebar.classList.toggle("active");
+        sidebar.classList.toggle("z-top");
+      };
+    });
   }
 
   // header end
