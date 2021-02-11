@@ -1,6 +1,6 @@
 .badge {
   background-color: $dark;
-  font-size: .75rem;
+  @include fontsize(.75rem);
 
   @each $color, $value in $theme-colors {
     &.is-#{$color} {

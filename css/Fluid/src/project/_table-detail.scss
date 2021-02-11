@@ -8,12 +8,12 @@
   .name {
     margin-bottom: .75rem;
     color: #697a8f;
-    font-size: .75rem;
+    @include fontsize(.75rem);
     font-weight: 500;
   }
 
   .value {
-    font-size: .875rem;
+    @include fontsize(.875rem);
   }
 }
 
@@ -22,7 +22,7 @@
   padding-bottom: 2rem;
   margin-bottom: 2rem;
 
-  &::after {
+  @include after {
     content: "";
     position: absolute;
     right: 2rem;
@@ -37,7 +37,7 @@
       padding-bottom: 24px;
       margin-bottom: 24px;
 
-      &::after {
+      @include after {
         right: 24px;
         left: 24px;
       }

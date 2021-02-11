@@ -1,56 +1,14 @@
+// stylelint-disable selector-class-pattern
+
 .table-container {
   border: 1px solid #f2f2f2;
   border-radius: .5rem;
   background-color: #fff;
 }
 
-// .my-table {
-//   .td {
-//     font-size: 0.875rem;
-//     letter-spacing: -0.002em;
-//     text-align: left;
-//     padding: 1.5rem 0.5rem;
-//   }
-
-//   .td.w-24 {
-//     padding-left: 2rem;
-//     padding-right: 2rem;
-//   }
-
-//   .td:first-of-type {
-//     padding-left: 2rem;
-//   }
-
-//   .td:last-of-type {
-//     padding-right: 2rem;
-//   }
-
-//   .thead .td {
-//     color: #697a8f;
-//     font-weight: 600;
-//     font-size: 0.6875rem;
-//     letter-spacing: 0.02em;
-//     text-transform: uppercase;
-//     background-color: rgba(105, 122, 143, 0.05);
-//   }
-
-//   .tbody {
-//     .tr:nth-of-type(even) {
-//       background-color: rgba(105, 122, 143, 0.05);
-//     }
-//   }
-//   .w-10\% {
-//     flex: none;
-//     width: 10%;
-//   }
-//   .w-7\% {
-//     flex: none;
-//     width: 7%;
-//   }
-// }
-
 .table_filter {
   position: relative;
+  // stylelint-disable-next-line declaration-no-important
   padding-right: 2rem !important;
   @include after() {
     content: "";
@@ -81,18 +39,18 @@
     color: #000;
     text-align: left;
     letter-spacing: -.002em;
-    font-size: .875rem;
+    @include fontsize(.875rem);
   }
 
   th {
     cursor: pointer;
     padding-right: .875rem;
-    transition: color .4s;
     color: #697a8f;
     text-transform: uppercase;
     letter-spacing: .02em;
-    font-size: .6875rem;
     font-weight: 600;
+    @include transition(color .4s);
+    @include fontsize(.6875rem);
 
     @include hover() {
       color: #2e5bff;
@@ -137,8 +95,6 @@
 }
 
 .table-no-data {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,7 +103,7 @@
   border: 1px solid rgba(191, 197, 210, .3);
   color: #697a8f;
   letter-spacing: -.0125rem;
-  font-size: 1rem;
+  @include fontsize(1rem);
   font-weight: 500;
   line-height: 1.125rem;
 }
