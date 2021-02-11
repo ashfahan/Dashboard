@@ -48,7 +48,7 @@
 
     @include after {
       content: "";
-      transform: translateX( $dropdown-trigger-caret-size / 2 ); // using transform in combination with margin-right to offset when parent element has display inline-block, because we have already used margin-left value for flex parent element having display flex
+      transform: translateX($dropdown-trigger-caret-size / 2); // using transform in combination with margin-right to offset when parent element has display inline-block, because we have already used margin-left value for flex parent element having display flex
       align-self: center; // align at middle when parent element has display flex e.g .menu-item
       margin-right: $dropdown-trigger-caret-size / 2; // using transform in combination with margin-right to offset when parent element has display inline-block, because we have already used margin-left value for flex parent element having display flex
       margin-left: 1rem; // align at end when parent element has display flex e.g .menu-item
