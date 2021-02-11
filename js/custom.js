@@ -103,6 +103,7 @@ jQuery(document).ready(($) => {
         const sidebar = e.target.previousSibling.previousSibling;
         lytsidebartoggle.forEach((toggle) => (toggle.style.visibility = "visible"));
         sidebar.classList.remove("active");
+        sidebar.style = "";
       };
     });
   }
@@ -117,9 +118,18 @@ jQuery(document).ready(($) => {
           if (toggle != button) toggle.style.visibility = opening ? "hidden" : "visible";
         });
         sidebar.classList.toggle("active");
+        sidebar.style = "";
         button.classList.remove("active");
       };
     });
+  }
+
+  if ((lytsidebarexpand = document.querySelector(".lyt-sidebar-expand"))) {
+    lytsidebarexpand.onclick = (e) => {
+      const sidebar = lytsidebarexpand.closest(".lyt-sidebar");
+      e.target.innerText = sidebar.style.minWidth ? "Expand" : "Shrink";
+      sidebar.style.minWidth = sidebar.style.minWidth ? "" : "90vw";
+    };
   }
 
   // header end
