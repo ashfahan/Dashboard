@@ -423,81 +423,36 @@
           </div>
         </aside>
 
-        <aside class="lyt-sidebar fixed shadow-lg p-0">
-          <button class="absolute top-25 lyt-sidebar-toggle btn is-sld is-primary is-circle"><i class="icon ri-2x ri-arrow-left-fill"></i></button>
-          <div class="p-1rem border-bottom font-bold">Create a new account</div>
+        <aside class="lyt-sidebar fixed shadow-lg p-0 tabs">
+          <a href="#tab1" class="absolute top-25 lyt-sidebar-toggle event-auto tab-switch btn is-sld is-primary is-circle"><i class="icon ri-2x ri-arrow-left-fill"></i></a>
+          <a href="#tab2" class="absolute top-50 lyt-sidebar-toggle event-auto tab-switch btn is-sld is-primary is-circle"><i class="icon ri-2x ri-arrow-left-fill"></i></a>
+          <a href="#tab3" class="absolute top-75 lyt-sidebar-toggle event-auto tab-switch btn is-sld is-primary is-circle"><i class="icon ri-2x ri-arrow-left-fill"></i></a>
+          <div class="p-1rem border-bottom">
+            <b>Create a new account</b>
+          </div>
           <div>
-            <div class="tabs individual-container">
+            <div class="individual-container">
               <div class="flex justify-between align-middle tab-button-wrap">
                 <div class="group">
-                  <a href="#tab1" class="btn is-min is-primary txt-upper tabs-switcher font-bold is-sm">tab 1</a>
-                  <a href="#tab2" class="btn is-min is-primary txt-upper tabs-switcher font-bold is-sm">tab 2</a>
+                  <a href="#tab1" class="btn is-min is-primary txt-upper tab-switch font-bold is-sm">tab 1</a>
+                  <a href="#tab2" class="btn is-min is-primary txt-upper tab-switch font-bold is-sm">tab 2</a>
+                  <a href="#tab3" class="btn is-min is-primary txt-upper tab-switch font-bold is-sm">tab 3</a>
                 </div>
 
                 <div class="data-grid-buttons-block">
-                  <button class="btn is-sld is-primary">extra button</button>
+                  <button class="btn is-sld is-primary expand">Expand</button>
                 </div>
               </div>
 
-              <div class="tab-content_block">
-                <div data-tab="tab1" class="tab_content tab-active">tab 1 content</div>
-                <div data-tab="tab2" class="tab_content">tab 2 content</div>
+              <div class="container">
+                <div data-tab="tab1" class="tab-content">tab 1</div>
+                <div data-tab="tab2" class="tab-content">tab 2</div>
+                <div data-tab="tab3" class="tab-content">tab 3</div>
               </div>
             </div>
           </div>
         </aside>
         <div class="overlay"></div>
-
-        <aside class="lyt-sidebar fixed shadow-lg p-0">
-          <button class="absolute top-50 lyt-sidebar-toggle btn is-sld is-primary is-circle"><i class="icon ri-2x ri-arrow-left-fill"></i></button>
-          <div class="p-1rem border-bottom font-bold">Create a new account</div>
-          <div>
-            <div class="tabs individual-container">
-              <div class="flex justify-between align-middle tab-button-wrap">
-                <div class="group">
-                  <a href="#tab1" class="btn is-min is-primary txt-upper tabs-switcher font-bold is-sm">tab 1</a>
-                  <a href="#tab2" class="btn is-min is-primary txt-upper tabs-switcher font-bold is-sm">tab 2</a>
-                </div>
-
-                <div class="data-grid-buttons-block">
-                  <button class="btn is-sld is-primary">extra button</button>
-                </div>
-              </div>
-
-              <div class="tab-content_block">
-                <div data-tab="tab1" class="tab_content tab-active">tab 1 content</div>
-                <div data-tab="tab2" class="tab_content">tab 2 content</div>
-              </div>
-            </div>
-          </div>
-        </aside>
-        <div class="overlay"></div>
-
-        <aside class="lyt-sidebar fixed shadow-lg p-0">
-          <button class="absolute top-75 lyt-sidebar-toggle btn is-sld is-primary is-circle"><i class="icon ri-2x ri-arrow-left-fill"></i></button>
-          <div class="p-1rem border-bottom font-bold">Create a new account</div>
-          <div>
-            <div class="tabs individual-container">
-              <div class="flex justify-between align-middle tab-button-wrap">
-                <div class="group">
-                  <a href="#tab1" class="btn is-min is-primary txt-upper tabs-switcher font-bold is-sm">tab 1</a>
-                  <a href="#tab2" class="btn is-min is-primary txt-upper tabs-switcher font-bold is-sm">tab 2</a>
-                </div>
-
-                <div class="data-grid-buttons-block">
-                  <button class="btn is-sld is-primary">extra button</button>
-                </div>
-              </div>
-
-              <div class="tab-content_block">
-                <div data-tab="tab1" class="tab_content tab-active">tab 1 content</div>
-                <div data-tab="tab2" class="tab_content">tab 2 content</div>
-              </div>
-            </div>
-          </div>
-        </aside>
-        <div class="overlay"></div>
-
       </header>
 
       <main>
@@ -634,7 +589,7 @@
               </div>
             </div>
 
-            <div class="tab-content_block">
+            <div>
               <div class="tab-content tab-active">
                 <div class="table-block table-event-block data-grid-table">
                   <table class="table">
@@ -1197,5 +1152,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/headroom.js/dist/headroom.js"></script>
     <script src="js/custom.js"></script>
+    <script src="./js/tabs.js"></script>
   </body>
 </html>
