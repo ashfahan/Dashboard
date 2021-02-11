@@ -1385,11 +1385,7 @@ body {
 .section-photos {
   position: relative;
 }
-.photos-container {
-  border-radius: 0.5rem;
-  border: 1px solid #f2f2f2;
-  background-color: #fff;
-}
+
 .photos-list {
   display: flex;
   flex-wrap: wrap;
