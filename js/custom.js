@@ -102,9 +102,10 @@ jQuery(document).ready(($) => {
       overlay.onclick = (e) => {
         const sidebar = e.target.previousSibling.previousSibling;
         lytsidebartoggle.forEach((toggle) => {
-          if (e.target.closest("a") != toggle) toggle.style.visibility = "visible";
+          if (e.target.closest("a") != toggle) toggle.style.visibility = toggle.style.visibility !== "hidden" ? "hidden" : "visible";
         });
         sidebar.classList.toggle("active");
+        e.target.closest("a").classList.remove("active");
       };
     });
   }
@@ -117,6 +118,7 @@ jQuery(document).ready(($) => {
           if (e.target.closest("a") != toggle) toggle.style.visibility = toggle.style.visibility !== "hidden" ? "hidden" : "visible";
         });
         sidebar.classList.toggle("active");
+        e.target.closest("a").classList.remove("active");
       };
     });
   }
