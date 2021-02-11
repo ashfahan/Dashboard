@@ -96,17 +96,6 @@ jQuery(document).ready(($) => {
     $("body").removeClass("rtl");
   });
 
-  // Dropdown
-  var dropdowntriggers = document.getElementsByClassName("dropdown-trigger");
-  Object.values(dropdowntriggers).forEach((trigger) => {
-    trigger.onclick = (e) => {
-      Object.values(dropdowntriggers).forEach((trigger) => {
-        if (e.target != trigger && trigger.closest(".dropdown-trigger").classList.contains("active")) trigger.closest(".dropdown-trigger").classList.remove("active");
-      });
-      e.target.closest(".dropdown-trigger").classList.toggle("active");
-    };
-  });
-
   // Sidebar
   if ((lytsidebaroverlay = document.querySelectorAll(".lyt-sidebar + .overlay"))) {
     lytsidebaroverlay.forEach((overlay) => {
