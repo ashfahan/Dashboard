@@ -100,14 +100,14 @@
 
 header { transition: left 0.4s ease-in-out, right 0.4s ease-in-out, top 1s ease-in-out; top: 0; }
 
-.headroom--not-top header { top: -100%; }
+.headroom--unpinned header { top: -100%; }
 
 header .sidebar_link_text { opacity: 1; }
 
 footer { transition: left 0.4s ease-in-out, right 0.4s ease-in-out, bottom 1s ease-in-out; bottom: 0; }
 
-.headroom--not-top footer { bottom: -100%; }
 
 .input:disabled { background-image: none; }
+.headroom--unpinned footer { bottom: -100%; }
 
 /*# sourceMappingURL=custom.css.map */
