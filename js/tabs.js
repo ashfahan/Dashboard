@@ -5,7 +5,6 @@
  * Licensed under MIT (https://github.com/fluid-framework/Fluid/blob/master/LICENSE)
  */
 
-
 // Todo: Remove Jquery Dependency
 // Todo: Remove reselect of the selected tab
 
@@ -18,7 +17,8 @@ if ((tabsArray = document.querySelectorAll(".tabs"))) {
   $.fx.off = true;
 
   tabsArray.forEach((tabs) => {
-    const firstTab = tabs.querySelector(".tab-content:first-child");
+    const firstTab = tabs.querySelector(".tab-content");
+    console.log(tabs, firstTab);
     const firstTabHref = firstTab.getAttribute("data-tab");
 
     if (!firstTabHref) throw `Missing href on anchor tab \n\n\`${firstTab.outerHTML}\` \n\n inside tabs \n\n\`${tabs.outerHTML}\``;

@@ -424,9 +424,9 @@
         </aside>
 
         <aside class="lyt-sidebar fixed shadow-lg p-0 tabs">
-          <a href="#tab1" class="absolute top-25 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 1</i></a>
-          <a href="#tab2" class="absolute top-50 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 2</i></a>
-          <a href="#tab3" class="absolute top-75 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 3</i></a>
+          <a href="#tab1" class="absolute top-25 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 1</a>
+          <a href="#tab2" class="absolute top-50 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 2</a>
+          <a href="#tab3" class="absolute top-75 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 3</a>
           <div class="p-1rem border-bottom">
             <b>Create a new account</b>
           </div>
@@ -517,40 +517,41 @@
         </section>
 
         <section class="section-individual section-custom">
-          <div class="individual-container">
-            <div class="tab-button-wrap mb-0">
-              <ul class="tab-button_block">
-                <li class="tab-button tab-active">Individual details</li>
-                <li class="tab-button">Advance details</li>
-              </ul>
+          <div class="individual-container tabs">
+            <div class="mx-2 my-7px border-bottom group">
+              <a href="#individual" class="btn is-min is-primary txt-upper tab-switch font-bold is-sm">Individual details</a>
+              <a href="#advance" class="btn is-min is-primary txt-upper tab-switch font-bold is-sm">Advance details</a>
+            </div>
 
-              <div>
+
+            <div data-tab="individual" class="tab-content">
+              <div class="mx-2">
                 <button
                   type="button"
                   class="btn is-fillin is-error inline-flex align-middle"
                   data-bs-toggle="popover"
                   data-bs-placement="bottom"
                   data-bs-content='
-                <form>
-                  <label class="block"><span class="label mb-2 inline-block">Medical Service</span>
-                    <select class="input">
-                      <option>Please Select</option>
-                      <option>Test 1</option>
-                      <option>Test 2</option>
-                      <option>Test 3</option>
-                      <option>Test 4</option>
-                      <option>Test 5</option>
-                      <option>Test 6</option>
-                      <option>Test 7</option>
-                      <option>Test 8</option>
-                      <option>Test 9</option>
-                      <option>Test 10</option>
-                      <option>Test 11</option>
-                    </select>
-                  </label>
-                  <label class="block"><span class="label mb-2 inline-block">Gross</span><input type="text" class="input"/></label>
-                  <label class="block"><span class="label mb-2 inline-block">Rejected Reason</span><textarea  rows="2" class="input"></textarea></label>
-                </form>'
+                  <form>
+                    <label class="block"><span class="label mb-2 inline-block">Medical Service</span>
+                      <select class="input">
+                        <option>Please Select</option>
+                        <option>Test 1</option>
+                        <option>Test 2</option>
+                        <option>Test 3</option>
+                        <option>Test 4</option>
+                        <option>Test 5</option>
+                        <option>Test 6</option>
+                        <option>Test 7</option>
+                        <option>Test 8</option>
+                        <option>Test 9</option>
+                        <option>Test 10</option>
+                        <option>Test 11</option>
+                      </select>
+                    </label>
+                    <label class="block"><span class="label mb-2 inline-block">Gross</span><input type="text" class="input"/></label>
+                    <label class="block"><span class="label mb-2 inline-block">Rejected Reason</span><textarea  rows="2" class="input"></textarea></label>
+                  </form>'
                 >
                   <div class="icon mr-7px">
                     <svg viewBox="0 0 12 16" xmlns="http://www.w3.org/2000/svg">
@@ -587,436 +588,513 @@
                   View Admission
                 </button>
               </div>
+
+              <div class="table-block table-event-block data-grid-table">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="txt-nowrap table_filter">invoice no</th>
+                      <th class="txt-nowrap table_filter">D.O.T</th>
+                      <th class="txt-nowrap table_filter">Medical Service</th>
+                      <th class="txt-nowrap table_filter">Gross</th>
+                      <th class="txt-nowrap table_filter">Rejected</th>
+                      <th class="table_filter">Rej Reason</th>
+                      <th class="txt-nowrap w-4">Alert</th>
+                      <th class="txt-nowrap w-2">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="data">
+                      <td class="txt-nowrap">19194132HJJ</td>
+                      <td class="txt-nowrap">11/20/2018</td>
+                      <td class="txt-nowrap">Nursing care</td>
+                      <td class="txt-nowrap">231</td>
+                      <td class="txt-nowrap">
+                        195
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-forbid-line"></i>
+                        </button>
+                      </td>
+                      <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-forbid-line"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-question-line"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-question-line"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-error-warning-line"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-error-warning-line"></i>
+                        </button>
+                      </td>
+                      <td>
+                        <button type="button" data-button="edit" class="btn is-sld inline-flex align-middle is-secondary">Edit <i class="ml-8 icon ri-edit-2-line"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="description">
+                      <td class="bg-warn" colspan="24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi, blanditiis voluptas quod pariatur eos provident exercitationem tempora odit dolor libero laudantium.</td>
+                    </tr>
+                    <tr class="editform" style="display: none">
+                      <td colspan="24">
+                        <div class="grid">
+                          <div class="column grid p-0">
+                            <label class="column w-12 control">
+                              <span class="label inline-block mb-2">D.O.T</span>
+                              <input class="input col" type="date" />
+                            </label>
+                            <label class="column w-12 control">
+                              <span class="label inline-block mb-2">Medical Service</span>
+                              <input class="input col" type="text" />
+                            </label>
+                            <label class="column w-12 control">
+                              <span class="label inline-block mb-2">Gross</span>
+                              <input class="input col" min="0" type="number" />
+                            </label>
+                            <label class="column w-12 control">
+                              <span class="label inline-block mb-2">Rejected</span>
+                              <input class="input col" min="0" type="number" />
+                            </label>
+                          </div>
+                          <label class="column w-8 control flex is-y">
+                            <span class="label inline-block mb-2">Rejected Reason</span>
+                            <textarea rows="4" class="input col"></textarea>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr class="data">
+                      <td class="txt-nowrap">19194132HJJ</td>
+                      <td class="txt-nowrap">11/20/2018</td>
+                      <td class="txt-nowrap">Nursing care</td>
+                      <td class="txt-nowrap">
+                        231
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-forbid-line"></i>
+                        </button>
+                      </td>
+                      <td class="txt-nowrap">195</td>
+                      <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-forbid-line"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-question-line"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-question-line"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-error-warning-line"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-error-warning-line"></i>
+                        </button>
+                      </td>
+                      <td>
+                        <button type="button" data-button="edit" class="btn is-sld inline-flex align-middle is-secondary">Edit <i class="ml-8 icon ri-edit-2-line"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="description">
+                      <td class="bg-warn" colspan="24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi, blanditiis voluptas quod pariatur eos provident exercitationem tempora odit dolor libero laudantium.</td>
+                    </tr>
+                    <tr class="editform" style="display: none">
+                      <td colspan="24">
+                        <div class="grid">
+                          <div class="column grid p-0">
+                            <label class="column w-12 control">
+                              <span class="label inline-block mb-2">D.O.T</span>
+                              <input class="input col" type="date" />
+                            </label>
+                            <label class="column w-12 control">
+                              <span class="label inline-block mb-2">Medical Service</span>
+                              <input class="input col" type="text" />
+                            </label>
+                            <label class="column w-12 control">
+                              <span class="label inline-block mb-2">Gross</span>
+                              <input class="input col" min="0" type="number" />
+                            </label>
+                            <label class="column w-12 control">
+                              <span class="label inline-block mb-2">Rejected</span>
+                              <input class="input col" min="0" type="number" />
+                            </label>
+                          </div>
+                          <label class="column w-8 control flex is-y">
+                            <span class="label inline-block mb-2">Rejected Reason</span>
+                            <textarea rows="4" class="input col"></textarea>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr class="data">
+                      <td class="txt-nowrap">19194132HJJ</td>
+                      <td class="txt-nowrap">
+                        11/20/2018
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-forbid-line"></i>
+                        </button>
+                      </td>
+                      <td class="txt-nowrap">Nursing care</td>
+                      <td class="txt-nowrap">231</td>
+                      <td class="txt-nowrap">195</td>
+                      <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-forbid-line"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-question-line"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-question-line"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-error-warning-line"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
+                          data-bs-toggle="popover"
+                          data-bs-placement="bottom"
+                          data-bs-content='
+                            <div class="txt-center">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
+                              <button class="btn is-sld is-error">Reject</button>
+                              <button class="btn is-sld is-valid">Resolve</button>
+                              <button class="btn is-sld is-warn">Ignore</button>
+                            </div>'
+                        >
+                          <i class="icon ri-2x ri-error-warning-line"></i>
+                        </button>
+                      </td>
+                      <td>
+                        <button type="button" data-button="edit" class="btn is-sld inline-flex align-middle is-secondary">Edit <i class="ml-8 icon ri-edit-2-line"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="description">
+                      <td class="bg-warn" colspan="24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi, blanditiis voluptas quod pariatur eos provident exercitationem tempora odit dolor libero laudantium.</td>
+                    </tr>
+                    <tr class="editform" style="display: none">
+                      <td colspan="24">
+                        <div class="grid">
+                          <div class="column grid p-0">
+                            <label class="column w-12 control">
+                              <span class="label inline-block mb-2">D.O.T</span>
+                              <input class="input col" type="date" />
+                            </label>
+                            <label class="column w-12 control">
+                              <span class="label inline-block mb-2">Medical Service</span>
+                              <input class="input col" type="text" />
+                            </label>
+                            <label class="column w-12 control">
+                              <span class="label inline-block mb-2">Gross</span>
+                              <input class="input col" min="0" type="number" />
+                            </label>
+                            <label class="column w-12 control">
+                              <span class="label inline-block mb-2">Rejected</span>
+                              <input class="input col" min="0" type="number" />
+                            </label>
+                          </div>
+                          <label class="column w-8 control flex is-y">
+                            <span class="label inline-block mb-2">Rejected Reason</span>
+                            <textarea rows="4" class="input col"></textarea>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="create-filter-block">
+                  <a class="create-filter" href="#">
+                    <div class="create-filter_svg">
+                      <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.66667 7.22C4.66695 6.86464 4.52536 6.52386 4.27333 6.27333L0.393334 2.39333C0.141308 2.1428 -0.000281165 1.80203 4.19197e-07 1.44667V0.666667C4.19197e-07 0.298477 0.298477 0 0.666667 0H11.3333C11.7015 0 12 0.298477 12 0.666667V1.44667C12.0003 1.80203 11.8587 2.1428 11.6067 2.39333L7.72667 6.27333C7.47464 6.52386 7.33305 6.86464 7.33333 7.22V9.66667C7.33333 10.0863 7.13574 10.4815 6.8 10.7333L5.2 11.9333C5.099 12.0091 4.96386 12.0213 4.85093 11.9648C4.738 11.9083 4.66667 11.7929 4.66667 11.6667V7.22Z" />
+                      </svg>
+                    </div>
+                    <div class="create-filter_text">Create Filter</div>
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <div>
-              <div class="tab-content tab-active">
-                <div class="table-block table-event-block data-grid-table">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th class="txt-nowrap table_filter">invoice no</th>
-                        <th class="txt-nowrap table_filter">D.O.T</th>
-                        <th class="txt-nowrap table_filter">Medical Service</th>
-                        <th class="txt-nowrap table_filter">Gross</th>
-                        <th class="txt-nowrap table_filter">Rejected</th>
-                        <th class="table_filter">Rej Reason</th>
-                        <th class="txt-nowrap w-4">Alert</th>
-                        <th class="txt-nowrap w-2">Actions</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="data">
-                        <td class="txt-nowrap">19194132HJJ</td>
-                        <td class="txt-nowrap">11/20/2018</td>
-                        <td class="txt-nowrap">Nursing care</td>
-                        <td class="txt-nowrap">231</td>
-                        <td class="txt-nowrap">
-                          195
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-forbid-line"></i>
-                          </button>
-                        </td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi</td>
-                        <td>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-forbid-line"></i>
-                          </button>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-question-line"></i>
-                          </button>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-question-line"></i>
-                          </button>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-error-warning-line"></i>
-                          </button>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-error-warning-line"></i>
-                          </button>
-                        </td>
-                        <td>
-                          <button type="button" data-button="edit" class="btn is-sld inline-flex align-middle is-secondary">Edit <i class="ml-8 icon ri-edit-2-line"></i></button>
-                        </td>
-                      </tr>
-                      <tr class="description">
-                        <td class="bg-warn" colspan="24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi, blanditiis voluptas quod pariatur eos provident exercitationem tempora odit dolor libero laudantium.</td>
-                      </tr>
-                      <tr class="editform" style="display: none">
-                        <td colspan="24">
-                          <div class="grid">
-                            <div class="column grid p-0">
-                              <label class="column w-12 control">
-                                <span class="label inline-block mb-2">D.O.T</span>
-                                <input class="input col" type="date" />
-                              </label>
-                              <label class="column w-12 control">
-                                <span class="label inline-block mb-2">Medical Service</span>
-                                <input class="input col" type="text" />
-                              </label>
-                              <label class="column w-12 control">
-                                <span class="label inline-block mb-2">Gross</span>
-                                <input class="input col" min="0" type="number" />
-                              </label>
-                              <label class="column w-12 control">
-                                <span class="label inline-block mb-2">Rejected</span>
-                                <input class="input col" min="0" type="number" />
-                              </label>
-                            </div>
-                            <label class="column w-8 control flex is-y">
-                              <span class="label inline-block mb-2">Rejected Reason</span>
-                              <textarea rows="4" class="input col"></textarea>
-                            </label>
-                          </div>
-                        </td>
-                      </tr>
+            <div data-tab="advance" class="tab-content">
+              <div class="table-block table-event-block data-grid-table">
+                <form>
+                  <table>
+                    <tr>
+                      <th>
+                        <div class="table_checkbox">
+                          <input id="table_checkbox_1" name="table_checkbox_1" type="checkbox" />
+                          <label for="table_checkbox_1"></label>
+                        </div>
+                      </th>
 
-                      <tr class="data">
-                        <td class="txt-nowrap">19194132HJJ</td>
-                        <td class="txt-nowrap">11/20/2018</td>
-                        <td class="txt-nowrap">Nursing care</td>
-                        <td class="txt-nowrap">
-                          231
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-forbid-line"></i>
-                          </button>
-                        </td>
-                        <td class="txt-nowrap">195</td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi</td>
-                        <td>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-forbid-line"></i>
-                          </button>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-question-line"></i>
-                          </button>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-question-line"></i>
-                          </button>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-error-warning-line"></i>
-                          </button>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-error-warning-line"></i>
-                          </button>
-                        </td>
-                        <td>
-                          <button type="button" data-button="edit" class="btn is-sld inline-flex align-middle is-secondary">Edit <i class="ml-8 icon ri-edit-2-line"></i></button>
-                        </td>
-                      </tr>
-                      <tr class="description">
-                        <td class="bg-warn" colspan="24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi, blanditiis voluptas quod pariatur eos provident exercitationem tempora odit dolor libero laudantium.</td>
-                      </tr>
-                      <tr class="editform" style="display: none">
-                        <td colspan="24">
-                          <div class="grid">
-                            <div class="column grid p-0">
-                              <label class="column w-12 control">
-                                <span class="label inline-block mb-2">D.O.T</span>
-                                <input class="input col" type="date" />
-                              </label>
-                              <label class="column w-12 control">
-                                <span class="label inline-block mb-2">Medical Service</span>
-                                <input class="input col" type="text" />
-                              </label>
-                              <label class="column w-12 control">
-                                <span class="label inline-block mb-2">Gross</span>
-                                <input class="input col" min="0" type="number" />
-                              </label>
-                              <label class="column w-12 control">
-                                <span class="label inline-block mb-2">Rejected</span>
-                                <input class="input col" min="0" type="number" />
-                              </label>
-                            </div>
-                            <label class="column w-8 control flex is-y">
-                              <span class="label inline-block mb-2">Rejected Reason</span>
-                              <textarea rows="4" class="input col"></textarea>
-                            </label>
-                          </div>
-                        </td>
-                      </tr>
+                      <th>
+                        <span class="table_filter">Ind Number</span>
+                      </th>
 
-                      <tr class="data">
-                        <td class="txt-nowrap">19194132HJJ</td>
-                        <td class="txt-nowrap">
-                          11/20/2018
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-forbid-line"></i>
-                          </button>
-                        </td>
-                        <td class="txt-nowrap">Nursing care</td>
-                        <td class="txt-nowrap">231</td>
-                        <td class="txt-nowrap">195</td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi</td>
-                        <td>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-forbid-line"></i>
-                          </button>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-question-line"></i>
-                          </button>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-question-line"></i>
-                          </button>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-error-warning-line"></i>
-                          </button>
-                          <button
-                            type="button"
-                            class="icon is-circle badge is-sm p-1rem btn is-error inline-flex align-middle"
-                            data-bs-toggle="popover"
-                            data-bs-placement="bottom"
-                            data-bs-content='
-                            <div class="txt-center">
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatum magni quasi porro neque repellendus accusamus</p>
-                              <button class="btn is-sld is-error">Reject</button>
-                              <button class="btn is-sld is-valid">Resolve</button>
-                              <button class="btn is-sld is-warn">Ignore</button>
-                            </div>'
-                          >
-                            <i class="icon ri-2x ri-error-warning-line"></i>
-                          </button>
-                        </td>
-                        <td>
-                          <button type="button" data-button="edit" class="btn is-sld inline-flex align-middle is-secondary">Edit <i class="ml-8 icon ri-edit-2-line"></i></button>
-                        </td>
-                      </tr>
-                      <tr class="description">
-                        <td class="bg-warn" colspan="24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure facilis saepe, at fugiat unde ab recusandae animi, blanditiis voluptas quod pariatur eos provident exercitationem tempora odit dolor libero laudantium.</td>
-                      </tr>
-                      <tr class="editform" style="display: none">
-                        <td colspan="24">
-                          <div class="grid">
-                            <div class="column grid p-0">
-                              <label class="column w-12 control">
-                                <span class="label inline-block mb-2">D.O.T</span>
-                                <input class="input col" type="date" />
-                              </label>
-                              <label class="column w-12 control">
-                                <span class="label inline-block mb-2">Medical Service</span>
-                                <input class="input col" type="text" />
-                              </label>
-                              <label class="column w-12 control">
-                                <span class="label inline-block mb-2">Gross</span>
-                                <input class="input col" min="0" type="number" />
-                              </label>
-                              <label class="column w-12 control">
-                                <span class="label inline-block mb-2">Rejected</span>
-                                <input class="input col" min="0" type="number" />
-                              </label>
-                            </div>
-                            <label class="column w-8 control flex is-y">
-                              <span class="label inline-block mb-2">Rejected Reason</span>
-                              <textarea rows="4" class="input col"></textarea>
-                            </label>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
+                      <th>
+                        <span class="table_filter">Family Number</span>
+                      </th>
+
+                      <th>
+                        <span class="table_filter">First Name</span>
+                      </th>
+
+                      <th>
+                        <span class="table_filter">Last Name</span>
+                      </th>
+
+                      <th>
+                        <span class="table_filter">Father’s Name</span>
+                      </th>
+
+                      <th>
+                        <span class="table_filter">Mother’s Name</span>
+                      </th>
+
+                      <th>Actions</th>
+                    </tr>
+
+                    <tr>
+                      <td>19194132HJJ</td>
+                      <td>19194132HJJ</td>
+                      <td>George</td>
+                      <td>Malone</td>
+                      <td>Abdul</td>
+                      <td>Hanna</td>
+                    </tr>
+
+                    <tr>
+                      <td>19194132HJJ</td>
+                      <td>19194132HJJ</td>
+                      <td>George</td>
+                      <td>Malone</td>
+                      <td>Abdul</td>
+                      <td>Giana</td>
+                    </tr>
+
+                    <tr>
+                      <td>19194132HJJ</td>
+                      <td>19194132HJJ</td>
+                      <td>George</td>
+                      <td>Malone</td>
+                      <td>Abdul</td>
+                      <td>Skylar</td>
+                    </tr>
                   </table>
 
                   <div class="create-filter-block">
@@ -1029,88 +1107,7 @@
                       <div class="create-filter_text">Create Filter</div>
                     </a>
                   </div>
-                </div>
-              </div>
-
-              <div class="tab-content">
-                <div class="table-block table-event-block data-grid-table">
-                  <form>
-                    <table>
-                      <tr>
-                        <th>
-                          <div class="table_checkbox">
-                            <input id="table_checkbox_1" name="table_checkbox_1" type="checkbox" />
-                            <label for="table_checkbox_1"></label>
-                          </div>
-                        </th>
-
-                        <th>
-                          <span class="table_filter">Ind Number</span>
-                        </th>
-
-                        <th>
-                          <span class="table_filter">Family Number</span>
-                        </th>
-
-                        <th>
-                          <span class="table_filter">First Name</span>
-                        </th>
-
-                        <th>
-                          <span class="table_filter">Last Name</span>
-                        </th>
-
-                        <th>
-                          <span class="table_filter">Father’s Name</span>
-                        </th>
-
-                        <th>
-                          <span class="table_filter">Mother’s Name</span>
-                        </th>
-
-                        <th>Actions</th>
-                      </tr>
-
-                      <tr>
-                        <td>19194132HJJ</td>
-                        <td>19194132HJJ</td>
-                        <td>George</td>
-                        <td>Malone</td>
-                        <td>Abdul</td>
-                        <td>Hanna</td>
-                      </tr>
-
-                      <tr>
-                        <td>19194132HJJ</td>
-                        <td>19194132HJJ</td>
-                        <td>George</td>
-                        <td>Malone</td>
-                        <td>Abdul</td>
-                        <td>Giana</td>
-                      </tr>
-
-                      <tr>
-                        <td>19194132HJJ</td>
-                        <td>19194132HJJ</td>
-                        <td>George</td>
-                        <td>Malone</td>
-                        <td>Abdul</td>
-                        <td>Skylar</td>
-                      </tr>
-                    </table>
-
-                    <div class="create-filter-block">
-                      <a class="create-filter" href="#">
-                        <div class="create-filter_svg">
-                          <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.66667 7.22C4.66695 6.86464 4.52536 6.52386 4.27333 6.27333L0.393334 2.39333C0.141308 2.1428 -0.000281165 1.80203 4.19197e-07 1.44667V0.666667C4.19197e-07 0.298477 0.298477 0 0.666667 0H11.3333C11.7015 0 12 0.298477 12 0.666667V1.44667C12.0003 1.80203 11.8587 2.1428 11.6067 2.39333L7.72667 6.27333C7.47464 6.52386 7.33305 6.86464 7.33333 7.22V9.66667C7.33333 10.0863 7.13574 10.4815 6.8 10.7333L5.2 11.9333C5.099 12.0091 4.96386 12.0213 4.85093 11.9648C4.738 11.9083 4.66667 11.7929 4.66667 11.6667V7.22Z" />
-                          </svg>
-                        </div>
-                        <div class="create-filter_text">Create Filter</div>
-                      </a>
-                    </div>
-                  </form>
-                </div>
+                </form>
               </div>
             </div>
           </div>
