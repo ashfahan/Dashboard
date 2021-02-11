@@ -117,6 +117,7 @@ jQuery(document).ready(($) => {
           if (toggle != button) toggle.style.visibility = opening ? "hidden" : "visible";
         });
         sidebar.classList.toggle("active");
+        button.classList.remove("active");
       };
     });
   }
