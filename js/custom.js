@@ -101,11 +101,8 @@ jQuery(document).ready(($) => {
     lytsidebaroverlay.forEach((overlay) => {
       overlay.onclick = (e) => {
         const sidebar = e.target.previousSibling.previousSibling;
-        lytsidebartoggle.forEach((toggle) => {
-          if (e.target.closest("a") != toggle) toggle.style.visibility = toggle.style.visibility !== "hidden" ? "hidden" : "visible";
-        });
-        sidebar.classList.toggle("active");
-        e.target.closest("a").classList.remove("active");
+        lytsidebartoggle.forEach((toggle) => (toggle.style.visibility = "visible"));
+        sidebar.classList.remove("active");
       };
     });
   }
@@ -114,11 +111,12 @@ jQuery(document).ready(($) => {
     lytsidebartoggle.forEach((toggle) => {
       toggle.onclick = (e) => {
         const sidebar = e.target.closest(".lyt-sidebar");
+        const opening = !sidebar.classList.contains("active");
+        const button = e.target.closest("a");
         lytsidebartoggle.forEach((toggle) => {
-          if (e.target.closest("a") != toggle) toggle.style.visibility = toggle.style.visibility !== "hidden" ? "hidden" : "visible";
+          if (toggle != button) toggle.style.visibility = opening ? "hidden" : "visible";
         });
         sidebar.classList.toggle("active");
-        e.target.closest("a").classList.remove("active");
       };
     });
   }
