@@ -1,4 +1,4 @@
-@media (prefers-reduced-motion: reduce) { .lyt-sidebar > .lyt-sidebar-toggle, .table-block th { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .lyt-sidebar > .lyt-sidebar-toggle, .table-block th, header, footer { transition: none; } }
 
 .sidebar-hidden { padding-left: 0 !important; }
 
@@ -98,14 +98,16 @@
 
 .arrow-up::before { content: ""; position: absolute; top: -10px; right: 50%; transform: translate(50%); border: 10px solid transparent; border-bottom-color: #2b2b2b; border-top: 0; }
 
-header { top: 0; transition: left .4s ease-in-out, right .4s ease-in-out, top 1s ease-in-out; }
+header { top: 0; transition: left 0.4s ease-in-out,right 0.4s ease-in-out,top 1s ease-in-out; }
 
 .headroom--unpinned header { top: -100%; }
 
 header .sidebar_link_text { opacity: 1; }
 
-footer { bottom: 0; transition: left .4s ease-in-out, right .4s ease-in-out, bottom 1s ease-in-out; }
+footer { bottom: 0; transition: left 0.4s ease-in-out,right 0.4s ease-in-out,bottom 1s ease-in-out; }
 
 .headroom--unpinned footer { bottom: -100%; }
+
+select.input[disabled], select.input:disabled { background-image: none; }
 
 /*# sourceMappingURL=custom.css.map */

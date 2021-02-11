@@ -65,6 +65,8 @@ footer {
   }
 }
 
-select.input:disabled {
-  background-image: none;
+select.input {
+  @include disabled {
+    background-image: none;
+  }
 }
