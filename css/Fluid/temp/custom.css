@@ -10,7 +10,7 @@
 
 .lyt-sidebar > .lyt-sidebar-toggle { left: -100vw; transform: translate(-50%, -50%); margin-left: 100%; transition: margin-left 0.5s ease-in-out,left 0.5s ease-in-out,transform 0.5s ease-in-out; }
 
-.lyt-sidebar.active > .lyt-sidebar-toggle { left: 0; transform: translate(-50%, -50%) rotate(180deg); margin-left: 0; }
+.lyt-sidebar.active > .lyt-sidebar-toggle { left: 0; margin-left: 0; }
 
 /*
   Details
