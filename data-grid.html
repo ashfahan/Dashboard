@@ -424,11 +424,11 @@
         </aside>
 
         <aside class="lyt-sidebar fixed shadow-lg p-0 tabs">
-          <a href="#tab1" onclick="console.log('on click event triggered')" class="absolute top-40 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 1</a>
-          <a href="#tab2" onclick="console.log('on click event triggered')" class="absolute top-45 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 2</a>
-          <a href="#tab3" onclick="console.log('on click event triggered')" class="absolute top-50 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 3</a>
-          <a href="#tab4" onclick="console.log('on click event triggered')" class="absolute top-55 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 4</a>
-          <a href="#tab5" onclick="console.log('on click event triggered')" class="absolute top-60 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 5</a>
+          <a href="#tab1" onclick="tabclick(this)" class="absolute top-40 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 1</a>
+          <a href="#tab2" onclick="tabclick(this)" class="absolute top-45 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 2</a>
+          <a href="#tab3" onclick="tabclick(this)" class="absolute top-50 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 3</a>
+          <a href="#tab4" onclick="tabclick(this)" class="absolute top-55 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 4</a>
+          <a href="#tab5" onclick="tabclick(this)" class="absolute top-60 lyt-sidebar-toggle tab-switch event-auto btn is-sld is-primary">Tab 5</a>
           <div class="p-1rem border-bottom">
             <b>Create a new account</b>
           </div>
@@ -1155,5 +1155,16 @@
     <script src="https://unpkg.com/headroom.js/dist/headroom.js"></script>
     <script src="js/custom.js"></script>
     <script src="./js/tabs.js"></script>
+    <script>
+      function tabclick(element) {
+        const href = element.getAttribute("href").replace("#", "");
+        const content = document.querySelector(`[data-tab='${href}'`);
+        console.log(href, content.innerHTML);
+
+        setTimeout(() => {
+          content.innerHTML = "Inner content " + href;
+        });
+      }
+    </script>
   </body>
 </html>
