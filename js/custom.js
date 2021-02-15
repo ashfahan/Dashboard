@@ -110,7 +110,7 @@ jQuery(document).ready(($) => {
 
   if ((lytsidebartoggle = document.querySelectorAll(".lyt-sidebar-toggle"))) {
     lytsidebartoggle.forEach((toggle) => {
-      toggle.onclick = (e) => {
+      toggle.addEventListener("click", (e) => {
         const sidebar = e.target.closest(".lyt-sidebar");
         const opening = !sidebar.classList.contains("active");
         const button = e.target.closest("a");
@@ -120,7 +120,7 @@ jQuery(document).ready(($) => {
         sidebar.classList.toggle("active");
         sidebar.style = "";
         button.classList.remove("active");
-      };
+      });
     });
   }
 
