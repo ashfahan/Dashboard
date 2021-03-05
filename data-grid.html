@@ -463,61 +463,53 @@
 
       <main>
         <section class="section-custom">
-          <div class="data-grid-table-container">
-            <div class="grid px-1rem">
-              <div class="column w-16 border-right">
-                <div class="txt-center detail">
-                  <label class="control flex flex-wrap align-middle">
-                    <span class="label pr-1rem">Claim No</span>
-                    <input class="input w-auto flex-grow" type="text" placeholder="Enter the claim number" />
-                  </label>
+          <div class="data-grid-table-container grid is-sm border-right">
+            <div hidden class="column w-8 grid align-middle">
+              <div class="column w-4"><img src="./img/user image.png" /></div>
+              <div class="column w-20">
+                <div class="font-bold is-lg">Test User</div>
+                <div class="flex align-middle">
+                  <div class="mr-1rem">01/01/2001</div>
+                  <div class="mr-1rem">ID: <span>01201999233</span></div>
+                  <div class="mr-1rem">01-20-2020</div>
                 </div>
-
-                <div class="grid is-sm">
-                  <div class="column w-14 grid align-middle">
-                    <div class="column w-4"><img src="./img/user image.png" /></div>
-                    <div class="column w-20">
-                      <div class="font-bold is-lg">Test User</div>
-                      <div class="flex align-middle">
-                        <div class="mr-1rem">01/01/2001</div>
-                        <div class="mr-1rem">ID: <span>01201999233</span></div>
-                        <div class="mr-1rem">01-20-2020</div>
-                      </div>
-                      <div>Provider Name: <span>Al Shafa Clinic</span></div>
-                      <div class="flex align-middle justify-between">
-                        <div>Entered by: <span>Khalifa</span></div>
-                        <div>Policy: <span>Active</span></div>
-                      </div>
-                      <div>
-                        <div class="badge is-primary is-pill">Status</div>
-                        <div class="badge is-primary is-pill">OutPatient</div>
-                        <div class="badge is-primary is-pill">Insured</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column grid align-middle border-left">
-                    <div class="column w-8 txt-center">
-                      <div class="name h6">Daily Target</div>
-                      <div class="value fs-3 font-bold clr-info">654</div>
-                    </div>
-
-                    <div class="column w-8 txt-center">
-                      <div class="name h6">Process</div>
-                      <div class="value font-bold flex align-middle justify-center">
-                        <span class="fs-3 clr-valid">75</span>
-                        <span class="fs-1 lh-1 font-light">/</span>
-                        <span class="fs-5">100</span>
-                      </div>
-                    </div>
-
-                    <div class="column w-8 txt-center">
-                      <div class="name h6">Error</div>
-                      <div class="value fs-3 font-bold clr-error">76</div>
-                    </div>
-                  </div>
+                <div>Provider Name: <span>Al Shafa Clinic</span></div>
+                <div class="flex align-middle justify-between">
+                  <div>Entered by: <span>Khalifa</span></div>
+                  <div>Policy: <span>Active</span></div>
+                </div>
+                <div>
+                  <div class="badge is-primary is-pill">Status</div>
+                  <div class="badge is-primary is-pill">OutPatient</div>
+                  <div class="badge is-primary is-pill">Insured</div>
                 </div>
               </div>
-              <div class="column w-8 border-left flex is-y justify-between"></div>
+            </div>
+            <div hidden class="column w-8 grid align-middle border-left border-right">
+              <div class="column w-8 txt-center">
+                <div class="name h6">Daily Target</div>
+                <div class="value fs-3 font-bold clr-info">654</div>
+              </div>
+
+              <div class="column w-8 txt-center">
+                <div class="name h6">Process</div>
+                <div class="value font-bold flex align-middle justify-center">
+                  <span class="fs-3 clr-valid">75</span>
+                  <span class="fs-1 lh-1 font-light">/</span>
+                  <span class="fs-5">100</span>
+                </div>
+              </div>
+
+              <div class="column w-8 txt-center">
+                <div class="name h6">Error</div>
+                <div class="value fs-3 font-bold clr-error">76</div>
+              </div>
+            </div>
+            <div class="column flex align-middle">
+              <label class="control flex flex-wrap align-middle mx-auto w-23">
+                <span class="label pr-1rem">Claim No</span>
+                <input class="input w-auto flex-grow" type="text" placeholder="Enter the claim number" />
+              </label>
             </div>
           </div>
         </section>
